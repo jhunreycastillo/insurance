@@ -767,7 +767,24 @@ footer p {
     .desktop {
         display: none;
     }
-    #featured-bg-1 {
+   #featured-bg-4 .post-content {
+        width: 100%;
+    }
+ 
+
+}
+@media screen and (max-width: 767px) { 
+    #life-insurance img {
+        position: relative;
+
+    }
+    #life-insurance {
+        padding-bottom: 0;
+    }
+    .social-icons li {
+        margin-right: 5px;
+    }
+  #featured-bg-1 {
         height: auto;
     }
     #featured-bg-1 .content-post {
@@ -783,25 +800,9 @@ footer p {
     #blog-insurance .col-md-8.row .col-md-6 , #blog-insurance .col-md-8.row .col-md-12{
         padding: 0;
     }
-    #featured-bg-4 .post-content {
-        width: 100%;
-    }
+   
     .post-content p {
         font-size: 14px;
-    }
- 
-
-}
-@media screen and (max-width: 767px) { 
-    #life-insurance img {
-        position: relative;
-
-    }
-    #life-insurance {
-        padding-bottom: 0;
-    }
-    .social-icons li {
-        margin-right: 5px;
     }
 }
 @media screen and (max-width: 560px) { 

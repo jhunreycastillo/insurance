@@ -1,0 +1,846 @@
+/*general styles*/
+@font-face {
+    font-family: 'ProximaNovaRegular';
+    src: url('fonts/ProximaNovaRegular.eot');
+    src: url('fonts/ProximaNovaRegular.eot') format('embedded-opentype'),
+         url('fonts/ProximaNovaRegular.woff2') format('woff2'),
+         url('fonts/ProximaNovaRegular.woff') format('woff'),
+         url('fonts/ProximaNovaRegular.ttf') format('truetype'),
+         url('fonts/ProximaNovaRegular.svg#ProximaNovaRegular') format('svg');
+}
+@font-face {
+    font-family: 'ProximaNovaSimibold';
+    src: url('fonts/ProximaNovaSimibold.eot');
+    src: url('fonts/ProximaNovaSimibold.eot') format('embedded-opentype'),
+         url('fonts/ProximaNovaSimibold.woff2') format('woff2'),
+         url('fonts/ProximaNovaSimibold.woff') format('woff'),
+         url('fonts/ProximaNovaSimibold.ttf') format('truetype'),
+         url('fonts/ProximaNovaSimibold.svg#ProximaNovaSimibold') format('svg');
+}
+@font-face {
+    font-family: 'ProximaNovaLight';
+    src: url('fonts/ProximaNovaLight.eot');
+    src: url('fonts/ProximaNovaLight.eot') format('embedded-opentype'),
+         url('fonts/ProximaNovaLight.woff2') format('woff2'),
+         url('fonts/ProximaNovaLight.woff') format('woff'),
+         url('fonts/ProximaNovaLight.ttf') format('truetype'),
+         url('fonts/ProximaNovaLight.svg#ProximaNovaLight') format('svg');
+}
+@font-face {
+    font-family: 'ProximaNovaBold';
+    src: url('fonts/ProximaNovaBold.eot');
+    src: url('fonts/ProximaNovaBold.eot') format('embedded-opentype'),
+         url('fonts/ProximaNovaBold.woff2') format('woff2'),
+         url('fonts/ProximaNovaBold.woff') format('woff'),
+         url('fonts/ProximaNovaBold.ttf') format('truetype'),
+         url('fonts/ProximaNovaBold.svg#ProximaNovaBold') format('svg');
+}
+
+a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+* {
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+    box-sizing: border-box;
+}
+strong {
+    font-family: 'ProximaNovaBold';
+}
+body {
+     font-family: 'ProximaNovaRegular';
+     font-size: 16px;
+     color: #373737;
+}
+h1 {
+    font-size: 42px;
+}
+h2 {
+    font-size: 38px;
+}
+h4 {
+    font-size: 22px;
+}
+.form-group {
+    position: relative;
+}
+.clear {
+    clear: both;
+}
+.btn {
+    font-size: 20px;
+    padding: 15px 65px;
+    cursor: pointer;
+}
+.btn:after {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 17px;
+    background: url(../img/icons/left-icon.png) no-repeat;
+    position: relative;
+    margin: 0 0 0 10px;
+    top: 2px;
+}
+.color1 {
+    background-color: #F39C12;
+    border-bottom: 4px solid #e19011;
+    color: #fff;
+    font-family: 'ProximaNovaBold';
+}
+.color1:hover {
+    background-color: #e19011; 
+}
+.default-line {
+    border: 6px solid #f39c12;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    width: 95px;
+    float: left;
+    margin: 0 0 15px 0;
+    display: block;
+   
+} 
+.sub-title {
+    font-size: 19px;
+}
+.mobile {
+    display: none;
+}
+/*header styles*/
+ 
+ header {
+    padding: 20px 0;
+ }
+ #logo ,  #top-menu{
+    float: left;
+ }
+ #logo a {
+    display: block;
+ }
+ #side-right , .help-center , .call-text  {
+    float: right;
+ }
+ .navbar {
+    padding: 0;
+    display: block;
+ }
+.top-menu-list {
+    padding: 0;
+    margin-top: 10px;
+}
+.top-menu-list li {
+    display: inline-block;
+    margin-right: 30px;
+}
+.top-menu-list li a{ 
+    display: block;
+    font-size: 14px;
+    font-family: 'ProximaNovaBold';
+    color: #373737;
+}
+.top-menu-list li a:hover{ 
+    color: #73AF47;
+}
+.logo {
+    display: block;
+}
+.call-icon {
+    display: inline-block;
+    background-color: #73af47;
+    color: #fff;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 18px;
+    padding-top: 5px;
+    margin: 8px 10px 0;
+}
+.call-text p {
+    font-size: 22px;
+    line-height: 22px;
+}
+.call-text p > span {
+    color: #f39c12;
+    font-size: 10px;
+    display: block;
+}
+
+/*banner styles*/
+#banner {
+    background-color: #538842;
+    background: linear-gradient(140deg, #75a245 0%, #71a145 50%, #538842 75%);
+    padding: 50px;
+    color: #fff;
+    position: relative;
+}
+#banner h1 {
+    margin-bottom: 15px;
+} 
+#banner p {
+    font-size: 19px;
+}
+#banner input , #banner .btn {
+    display: block;
+    width: 100%;
+}
+#banner input {
+    font-size: 18px;
+    color: #313131;
+    padding: 20px 20px 20px 50px;
+    margin-bottom: 20px;
+    background: url(../img/icons/map-pointer.png)  #fff no-repeat;
+    background-position: 4% center;
+ 
+}
+.mac-img {
+    margin-top: 60px;
+}
+.input-tooltip {
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+.arrow-down {
+    text-align: center;
+    margin-top: 10px;
+}
+ .slider {
+    width: 100%;
+    margin: 0 auto;
+}
+/*lender section*/
+#lenders {
+    padding: 20px 0;
+    border-bottom: 1px solid #eaebea;
+}
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  margin: 0 auto;
+  display: block;
+}
+
+/*service section*/
+section h2 {
+   color: #69a646;
+}
+
+#service  , #used-insurance , #protection-insurance , #life-insurance{
+    padding: 60px 0;
+} 
+#service h2 {
+    color: #73af47;
+}
+.service-widgets {
+    margin: 40px 0;
+}
+.service-box {
+    padding: 30px 20px 20px;
+    border: 1px solid #ebebeb;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    color: #707070;
+}
+.service-box strong {
+    display: block;
+    margin: 15px 0 5px;
+    font-size: 17px;
+}
+.service-box p {
+    font-size: 15px;
+}
+.service-box.last p {
+    margin-top: 40px;
+}
+
+/*rating section*/
+ 
+.rating-box {
+    background: url(../img/geometry-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 40px 40px 40px 10px;
+    border: 1px solid #ebebeb;
+     -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+
+}
+#service .rating-box h2 {
+    font-size: 78px;
+    font-family: 'ProximaNovaLight';
+    color: #606060;
+}
+.rating-box h2 span { 
+   font-size: 35px;
+    vertical-align: top;
+    margin-top: 10px;
+    display: inline-block;
+    margin-left: -15px;
+}
+.rate-name {
+    font-size: 20px;
+    font-family: 'ProximaNovaBold';
+}
+.rating-box  p {
+    font-size: 16px;
+}
+.rating-box  .carousel-caption {
+    position: relative;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    color: #6d6d6d;
+    text-align: left;
+}
+.rating-box  .carousel-indicators .active { 
+    background-color: #73af47;
+}
+.rating-box  .carousel-indicators li {
+    height: 10px;
+    max-width: 10px;
+    border-radius: 50%;
+    background: #ccc;
+}
+.rating-box .carousel-indicators {
+    margin: 0;
+    bottom: 10px;
+}
+ 
+.star-rate i {
+    color: #efce4a;
+    font-size: 24px;
+}
+.our-rating-holder {
+    padding-right: 30px;
+}
+.our-rating {
+    border-right: 1px solid #ddd;
+}
+
+/*compare section*/
+#compare-insurance , #benefits-insurance , #protection-insurance{
+    background-color: #f9f9f9;
+}
+ 
+.compare-box {
+   padding: 50px 0 50px 50px;
+}
+.compare-box2 {
+   padding: 80px 60px 80px 0;
+}
+#compare-insurance p { 
+    margin: 25px 0;
+}
+.powered-list {
+    padding: 0;
+    margin-bottom: 10px;
+}
+.powered-list li {
+    display: block;
+    font-size: 16px;
+    position: relative;
+    padding-left: 45px;
+    margin-bottom: 15px;
+}
+.powered-list li:before {
+   content: '';
+    position: absolute;
+    width: 30px;
+    height: 25px;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    background: url("../img/icons/check.png") no-repeat right center;
+}
+.powered-list .check-icon  , .powered-list li > p{
+    display: inline-block;
+}
+
+/*used section*/
+ 
+#used-insurance .col-md-2 {
+    padding: 30px;
+}
+.used-icons {
+    border: 1px solid #ebebeb;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%; 
+    position: relative;
+    margin: 0 auto 20px;
+}
+.used-icons img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: block;
+}
+
+/*protection section*/
+
+.protection-box {
+    background-color: #fff;
+    padding: 60px 50px 40px;
+    position: relative;
+    -moz-box-shadow: 0px 5px 15px 0px rgba(000,000,000,0.1);
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(000,000,000,0.1);
+    box-shadow: 0px 5px 15px 0px rgba(000,000,000,0.1);
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+    min-height: 300px;
+
+}
+.protection-box img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: -50px;
+}
+.protection-box p {
+    margin: 0;
+}
+.protection-box-holder {
+    margin-top: 80px;
+    margin: 80px 0 40px;
+}
+.protection-box h5 {
+    font-size: 18px;
+}
+
+/*life section*/
+ 
+#life-insurance img {
+    position: absolute;
+    right: 0;
+    bottom: -60px;
+}
+#life-insurance p {
+    margin: 40px 0 40px;
+}
+#life-insurance .powered-list {
+    padding-right: 40px; 
+}
+#life-insurance li {
+    font-weight: 600;
+}
+
+/*testimonial section*/
+
+#testimonial-insurance {
+    padding: 40px 0 80px;
+    background: url(../img/testimonial-bg.jpg) no-repeat;
+    background-size: cover;
+}
+#testimonial-insurance  .carousel-caption {
+    position: relative;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    color: #6d6d6d;
+    text-align: left;
+}
+#testimonial-insurance .carousel-item {
+    background: #fff;
+    padding: 15px 40px 0px;
+}
+#testimonial-insurance .carousel-inner {
+    width: 90%;
+    margin: 30px auto 0;
+
+     -moz-box-shadow: 0px 5px 15px 5px rgba(16,16,16,0.1);
+    -webkit-box-shadow: 0px 5px 15px 5px rgba(16,16,16,0.1);
+    box-shadow: 0px 5px 15px 5px rgba(16,16,16,0.1);
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+}
+#testimonial-insurance .carousel-control-next-icon, #testimonial-insurance .carousel-control-prev-icon {
+   width: 35px;
+    height: 35px; 
+}
+#testimonial-insurance .carousel-control-next, #testimonial-insurance .carousel-control-prev {
+    width: 5%;
+    opacity: 1;
+    
+}
+#testimonial-insurance .carousel-control-prev-icon {
+    background-image: url(../img/icons/prev-icon.png);
+}
+#testimonial-insurance .carousel-control-next-icon {
+    background-image: url(../img/icons/next-icon.png);
+}
+#testimonial-insurance  .carousel-indicators li {
+    height: 10px;
+    max-width: 10px;
+    border-radius: 50%;
+    background: #ccc;
+}
+#testimonial-insurance  .carousel-indicators .active { 
+    background: #69a646;
+}
+#testimonial-insurance .carousel-indicators {
+    margin: 0;
+    bottom: -40px;
+}
+#testimonial-insurance .rate-name {
+    font-size: 18px;
+    color: #f39c12;
+    text-align: right;
+   margin: 0;
+}
+
+/*blog section*/ 
+#blog-insurance {
+    padding: 40px 0;
+      clear: both;
+}
+#blog-box {
+    margin: 40px 0;
+}
+
+#blog-box img {
+    width: 100%;
+}
+.content-post {
+   /* position: absolute;
+    bottom: 0;*/
+    padding: 100px 25px 35px 25px;
+    color: #fff;
+    text-align: left;
+}
+.post-date {
+    font-weight: bold;
+}
+.post-content {
+    background-color: #fff;
+    padding: 20px;
+    border-top: 3px solid #96ca4b;
+    position: relative;
+
+}
+.post-content:after {
+   font-size: 0px;
+    line-height: 0%;
+    width: 0px;
+    border-top: 20px solid #fff;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    left: 30px;
+}
+.post-content p{ 
+    color: #424242;
+    font-size: 14px;
+    font-weight: 600;
+}
+.full-blog-sec {
+    margin-top: 25px;
+}
+.date {
+    font-size: 14px;
+}
+.post-content .advice-text {
+    color: #848484;
+    margin-bottom: 10px;
+}
+#featured-bg-1 {
+      height: 100%;
+      position: relative;
+}
+#featured-bg-1 .content-post { 
+    position: absolute;
+    bottom: 0;  
+}
+#featured-bg-1 {
+    background: url(../img/blog-img1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#featured-bg-2 {
+    background: url(../img/blog-img2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#featured-bg-3 {
+    background: url(../img/blog-img3.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#featured-bg-4 {
+    background: url(../img/blog-img4.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#featured-bg-4 .post-content{ 
+    width: 44%;
+}
+/*policies section */   
+#policies-insurance {
+    padding: 35px 0;
+    background: url(../img/compare-bg.jpg) no-repeat;
+    background-size: cover;
+}
+#policies-insurance h3 {
+    font-size: 28px;
+    color: #fff;
+    margin-right: 40px;
+}
+#policies-insurance h3 , #policies-insurance .btn {
+    display: inline-block;
+}
+ 
+/*footer section*/
+footer {
+    padding: 40px;
+}
+#footer-logo {
+    margin-bottom: 20px;
+}
+footer p {
+    font-size: 13px;
+    color: #808080;
+    margin: 0;
+}
+#footer-menu {
+    margin-top: 40px;
+}
+#footer-menu  ul {
+    padding: 0;
+}
+#footer-menu li{
+    display:block;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+#footer-menu li a{
+    display: block;
+    color: #61a445;
+    font-weight: 600;
+}
+.social-icons {
+    padding: 0;
+    margin: 20px 0;
+}
+.social-icons li  {
+    display:  inline-block;
+    margin-right: 15px;
+}
+.social-icons a  {
+    display: block;
+    background: #a9a9a9;
+    color: #fff;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 8px;
+}
+.social-icons i {
+    font-size: 18px;
+}
+
+/*responsive styles*/
+@media screen and (max-width: 1200px) {
+    .post-date{
+        margin: 0;
+    }
+    .slick-next {
+        right: -25px;
+    }
+    .slick-prev {
+        left: -25px;
+    }
+}
+@media screen and (max-width: 990px) {
+    .top-menu-list li {
+        display: block;
+        margin-bottom: 15px;
+    }
+    #logo, #top-menu , #side-right {
+        float: none;
+    }
+    .help-center, .call-text {
+        float: left;
+    }
+    .navbar-toggleable-md {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+    #top-menu {
+        margin-top: 65px;
+        background-color: #fff;
+        padding: 20px;
+    }
+    #top-menu:before , #top-menu:after   { 
+        display: table;
+        content: "";
+    }
+     #top-menu:after {
+        clear: both;
+     }
+     .post-content {
+        padding: 10px;
+     }
+     .content-post {
+        padding: 10px;
+     }
+     .post-content p {
+        font-size: 12px;
+    }
+  
+}
+@media screen and (max-width: 990px) {
+    .our-rating {
+        border: none;
+    }
+    .our-rating-holder {
+        padding: 0;
+    }
+}
+@media screen and (max-width: 768px) {
+    .service-box {
+        margin-bottom: 40px;
+    }
+    .protection-box {
+        min-height: auto;
+        margin-bottom: 100px;
+    }
+  
+    #life-insurance img {
+        position: absolute;
+        bottom: 0;
+        margin-top: 40px;
+
+    }
+    #testimonial-insurance .carousel-control-next-icon, #testimonial-insurance .carousel-control-prev-icon {
+        height: 25px;
+
+    }
+    
+    #testimonial-insurance .carousel-control-next-icon, #testimonial-insurance .carousel-control-prev-icon {
+        height: 32px;
+    }
+    .content-post {
+ 
+        padding: 20px;
+    }
+    .post-content {
+        padding: 10px;
+    }
+    #why-insurance {
+        margin-bottom: 80px;
+    }
+    .compare-box2 {
+        padding: 80px 60px 80px 60px;
+    }
+    .compare-box {
+            padding: 50px;
+    }
+    .mobile {
+        display: block;
+    }
+    .desktop {
+        display: none;
+    }
+    #featured-bg-1 {
+        height: auto;
+    }
+    #featured-bg-1 .content-post {
+        position: relative;
+    }
+    .content-post {
+        padding: 40px 20px 20px;
+        margin-bottom: 20px;
+    }
+    #blog-insurance .col-md-8.row , .full-blog-sec{
+        margin: 0;
+    }
+    #blog-insurance .col-md-8.row .col-md-6 , #blog-insurance .col-md-8.row .col-md-12{
+        padding: 0;
+    }
+    #featured-bg-4 .post-content {
+        width: 100%;
+    }
+    .post-content p {
+        font-size: 14px;
+    }
+ 
+
+}
+@media screen and (max-width: 767px) { 
+    #life-insurance img {
+        position: relative;
+
+    }
+    #life-insurance {
+        padding-bottom: 0;
+    }
+    .social-icons li {
+        margin-right: 5px;
+    }
+}
+@media screen and (max-width: 560px) { 
+ 
+    #testimonial-insurance .carousel-control-next, #testimonial-insurance .carousel-control-prev {
+        width: 10%;
+    }
+    #testimonial-insurance .carousel-inner {
+        width: 75%; 
+    }
+     .compare-box ,  .compare-box2 { 
+        padding: 40px 20px;
+     }
+    #testimonial-insurance .carousel-control-next-icon, #testimonial-insurance .carousel-control-prev-icon {
+        height: 35px;
+    }
+    #banner {
+        padding: 20px;
+    }
+    #lenders .container {
+        padding: 0 40px;
+    }
+    .slick-next {
+        right: -30px !important;
+    }
+    #policies-insurance h3 {
+        margin: 0 0 20px 0;
+    }
+ 
+    .rating-box {
+        padding: 40px 10px 40px 10px;
+    }
+    .rating-box .carousel-inner {
+        width: 100%;
+    }
+    .rating-box .carousel-caption {
+        text-align: center;
+    }
+    #testimonial-insurance .carousel-inner { 
+        overflow: auto;
+    }
+}

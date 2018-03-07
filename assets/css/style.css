@@ -686,9 +686,6 @@ h4 {
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
 }
-.popular-box img {
-    max-width: 55px;
-}
 .popular-box .meta , .archive-list  , .archive-list li:last-child {
     margin: 0;
 }
@@ -705,6 +702,8 @@ h4 {
 .popular-box img {
     margin-top: 10px;
     max-width: 55px;
+    height: 55px;
+    border-radius: 50%;
 }
 .meta .popular-post-date {
    font-size: 11px;
@@ -1300,10 +1299,7 @@ footer p {
      .right-space {
         padding: 0;
     }
-    .popular-box img {
-        width: auto; 
-    }
-      
+  
     #sidebar {
         margin-top: 40px;
     }

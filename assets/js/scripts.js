@@ -1,3 +1,4 @@
+// lender slider
 $(document).on('ready', function() {
    $(".lender-slide").slick({
     dots: false,
@@ -8,6 +9,16 @@ $(document).on('ready', function() {
     slidesToScroll: 2,
     variableWidth: true,
     responsive: [
+	    {
+	      breakpoint: 1200,
+	      settings: {
+	        slidesToShow: 6,
+	        slidesToScroll: 2,
+	        infinite: true,
+	        dots: true,
+	        variableWidth: false
+	      }
+	    },
 	    {
 	      breakpoint: 1024,
 	      settings: {
@@ -37,6 +48,7 @@ $(document).on('ready', function() {
   ]
   });
 
+// page down script
   $(".page-down").on('click', function(event) {
     if (this.hash !== "") {
       event.preventDefault();
@@ -50,10 +62,14 @@ $(document).on('ready', function() {
   });
 });
 
+
+// carousel script
 $('.carousel').carousel({
   interval: 3000
 })
 
+
+// mobile menu toggle
 var theToggle = document.getElementById('toggle');
 function hasClass(elem, className) {
 	return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');

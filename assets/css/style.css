@@ -1493,7 +1493,9 @@ footer p {
     #inner-content {
         padding: 0 20px;
     }
-   
+    .meta span {
+        display: block;
+    }
 }
 @media screen and (max-width: 320px) {
     .slick-slide {

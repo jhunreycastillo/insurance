@@ -44,15 +44,7 @@ $(document).on('ready', function() {
 	        slidesToScroll: 1,
 	        variableWidth: false
 	      }
-	    },
-	     {
-	      breakpoint: 340,
-	      settings: {
-	        slidesToShow: 1,
-	        slidesToScroll: 1,
-	        variableWidth: false
-	      }
-	    }
+	    } 
   ]
   });
 

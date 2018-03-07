@@ -1499,6 +1499,9 @@ footer p {
     #inner-page h2 {
          font-size: 28px; 
     }
+    .post-box-link {
+        display: block;
+    }
 }
 @media screen and (max-width: 320px) {
     .slick-slide {

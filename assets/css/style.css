@@ -483,11 +483,7 @@ h4 {
 .meta {
     margin-bottom: 15px;
 }
-.meta span {
-    font-weight: normal;
-    color: #595959;
-    margin-right: 30px;
-}
+ 
 .post-date:before  , .post-author:before {
     display: inline-block;
     content: "";
@@ -681,7 +677,7 @@ h4 {
     text-transform: uppercase;
 }
 .popular-box , .archive-box  {
-    padding: 15px;
+    padding: 20px 25px 20px 15px;
     border: 1px solid #ebebeb;
     margin-bottom: 15px;
     border-radius: 4px;
@@ -691,37 +687,44 @@ h4 {
     -o-border-radius: 4px;
 }
 .popular-box img {
-    width: 100%;
-    margin-top: 10px;
+    max-width: 55px;
 }
-.popular-box .meta {
+.popular-box .meta , .archive-list  , .archive-list li:last-child {
     margin: 0;
 }
-.popular-box .excerpt {
-    font-size: 13px;
-    font-weight: bold;
-    text-align: left;
-    margin: 0;
+.post-box-link {
+    display: flex;
+}
+.img-post {
+    display: inline-block;
+    margin-right: 20px;
 }
 .popular-box .excerpt a{ 
       color: #2d2d2d;
+}
+.popular-box img {
+    margin-top: 10px;
+    max-width: 55px;
 }
 .meta .popular-post-date {
    font-size: 11px;
    color: #71be59;
    font-weight: bold;
 }
-.archive-list {
-    margin: 0;
+.single-post-content{
+    font-size: 13px;
+    line-height: 16px;
+    display: block;
+    color: #2d2d2d;
+    font-weight: bold;
 }
+ 
 .archive-list li {
     display: block;
     position: relative;
     margin-bottom: 15px;
 }
-.archive-list li:last-child { 
-    margin: 0;
-} 
+ 
 .archive-list li > a { 
     font-size: 13px;
     color: #606060;
@@ -1300,9 +1303,7 @@ footer p {
     .popular-box img {
         width: auto; 
     }
-     .popular-box , .popular-box .excerpt {
-        text-align: center;
-    }
+      
     #sidebar {
         margin-top: 40px;
     }
@@ -1498,6 +1499,9 @@ footer p {
     }
     #pagination li {
         margin: 0;
+    }
+    #inner-page h2 {
+         font-size: 28px; 
     }
 }
 @media screen and (max-width: 320px) {

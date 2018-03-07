@@ -1485,7 +1485,7 @@ footer p {
         right: -25px;
     }
     #inner-content .container {
-        padding: 40px;
+        padding: 20px;
     }
     #inner-content {
         padding: 0 20px;
@@ -1503,8 +1503,11 @@ footer p {
         display: block;
     }
     .quote-box input[type="text"], .quote-box select , .search-box input[type="text"]{
-        font-size: 13px;
+        font-size: 11px;
         padding: 10px 10px 10px 25px;
+    }
+    .search-box button {
+        top: 90px;
     }
 @media screen and (max-width: 320px) {
     .slick-slide {

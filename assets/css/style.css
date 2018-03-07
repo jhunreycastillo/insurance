@@ -1303,6 +1303,9 @@ footer p {
      .popular-box , .popular-box .excerpt {
         text-align: center;
     }
+    #sidebar {
+        margin-top: 40px;
+    }
     
   
 }
@@ -1346,9 +1349,7 @@ footer p {
         margin: 0;
     }
    
-    #sidebar {
-        margin-top: 40px;
-    }
+    
     .search-box button {
         top: 95px;
     }

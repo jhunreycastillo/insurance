@@ -1503,7 +1503,7 @@ footer p {
         display: block;
     }
     .quote-box input[type="text"], .quote-box select , .search-box input[type="text"]{
- 
+        font-size: 13px;
         padding: 10px 10px 10px 25px;
     }
 @media screen and (max-width: 320px) {

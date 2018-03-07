@@ -407,6 +407,7 @@ h4 {
 }
 .slick-slide {
   margin: 0px 20px;
+  vertical-align: middle;
 }
 
 .slick-slide img {
@@ -414,7 +415,7 @@ h4 {
   display: block;
    max-width: 100%;
     height: auto;
- 
+
 }
 
 /*service section*/

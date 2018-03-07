@@ -1496,6 +1496,9 @@ footer p {
     .meta span {
         display: block;
     }
+    #pagination li {
+        margin: 0;
+    }
 }
 @media screen and (max-width: 320px) {
     .slick-slide {

@@ -44,6 +44,14 @@ $(document).on('ready', function() {
 	        slidesToScroll: 1,
 	        variableWidth: false
 	      }
+	    },
+	     {
+	      breakpoint: 340,
+	      settings: {
+	        slidesToShow: 1,
+	        slidesToScroll: 1,
+	        variableWidth: false
+	      }
 	    }
   ]
   });
@@ -62,6 +70,12 @@ $(document).on('ready', function() {
   });
 });
 
+$('.dropdown').hover(function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+}, function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+
+});
 
 // carousel script
 $('.carousel').carousel({

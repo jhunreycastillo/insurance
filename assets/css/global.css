@@ -1,0 +1,116 @@
+@font-face {
+  font-family: 'ProximaNovaRegular';
+  src: url("fonts/ProximaNovaRegular.eot");
+  src: url("fonts/ProximaNovaRegular.eot") format('embedded-opentype'), url("fonts/ProximaNovaRegular.woff2") format('woff2'), url("fonts/ProximaNovaRegular.woff") format('woff'), url("fonts/ProximaNovaRegular.ttf") format('truetype'), url("fonts/ProximaNovaRegular.svg#ProximaNovaRegular") format('svg');
+}
+@font-face {
+  font-family: 'ProximaNovaSimibold';
+  src: url("fonts/ProximaNovaSimibold.eot");
+  src: url("fonts/ProximaNovaSimibold.eot") format('embedded-opentype'), url("fonts/ProximaNovaSimibold.woff2") format('woff2'), url("fonts/ProximaNovaSimibold.woff") format('woff'), url("fonts/ProximaNovaSimibold.ttf") format('truetype'), url("fonts/ProximaNovaSimibold.svg#ProximaNovaSimibold") format('svg');
+}
+@font-face {
+  font-family: 'ProximaNovaLight';
+  src: url("fonts/ProximaNovaLight.eot");
+  src: url("fonts/ProximaNovaLight.eot") format('embedded-opentype'), url("fonts/ProximaNovaLight.woff2") format('woff2'), url("fonts/ProximaNovaLight.woff") format('woff'), url("fonts/ProximaNovaLight.ttf") format('truetype'), url("fonts/ProximaNovaLight.svg#ProximaNovaLight") format('svg');
+}
+@font-face {
+  font-family: 'ProximaNovaBold';
+  src: url("fonts/ProximaNovaBold.eot");
+  src: url("fonts/ProximaNovaBold.eot") format('embedded-opentype'), url("fonts/ProximaNovaBold.woff2") format('woff2'), url("fonts/ProximaNovaBold.woff") format('woff'), url("fonts/ProximaNovaBold.ttf") format('truetype'), url("fonts/ProximaNovaBold.svg#ProximaNovaBold") format('svg');
+}
+a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+* {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  box-sizing: border-box;
+}
+body {
+  color: #373737;
+  font-size: 16px;
+  font-family: 'ProximaNovaRegular';
+}
+h1 {
+  font-size: 42px;
+}
+h2 {
+  font-size: 38px;
+}
+h4 {
+  font-size: 22px;
+}
+strong {
+  font-family: 'ProximaNovaBold';
+}
+.form-group {
+  position: relative;
+}
+.clear {
+  clear: both;
+}
+.btn {
+  font-size: 20px;
+  padding: 15px 65px;
+  cursor: pointer;
+}
+.btn:after {
+  content: '';
+  display: inline-block;
+  width: 25px;
+  height: 17px;
+  background: url("../img/icons/left-icon.png") no-repeat;
+  position: relative;
+  margin: 0 0 0 10px;
+  top: 2px;
+}
+.main-bg {
+  background: linear-gradient(140deg, #75a245 0%, #71a145 50%, #538842 75%);
+}
+.main-bg2 {
+  background: linear-gradient(140deg, #75a245 0%, #71a145 50%, #72a649 75%);
+}
+.btn2 {
+  font-size: 14px;
+  padding: 10px;
+  width: 180px;
+  text-align: center;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  border-radius: 30px;
+}
+.color1 {
+  background-color: #f39c12;
+  border-bottom: 4px solid #e19011;
+  color: #fff;
+}
+.color1:hover {
+  background-color: #e19011;
+  color: #fff !important;
+}
+.default-line {
+  border: 6px solid #f39c12;
+  width: 95px;
+  float: left;
+  margin: 0 0 15px 0;
+  display: block;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+.right-space {
+  padding-right: 40px;
+}
+.sub-title {
+  font-size: 19px;
+}
+.mobile {
+  display: none;
+}

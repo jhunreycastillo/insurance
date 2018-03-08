@@ -1059,13 +1059,13 @@ section h2 {
     font-size: 18px;
     color: #f39c12;
     text-align: right;
-   margin: 0;
+    margin: 0;
 }
 
 /*blog section*/ 
 #blog-insurance {
     padding: 40px 0;
-      clear: both;
+    clear: both;
 }
 #blog-box {
     margin: 40px 0;
@@ -1083,6 +1083,7 @@ section h2 {
 }
 .post-date {
     font-weight: bold;
+    margin-right: 20px;
 }
 .post-content {
     background-color: #fff;

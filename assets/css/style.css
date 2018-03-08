@@ -1221,7 +1221,7 @@ footer p {
     .compare-box2 {
         padding: 50px 0 50px 0;
     }
-  .top-menu-list li {
+   .top-menu-list li {
         margin-right: 15px;
     }
 }
@@ -1355,7 +1355,9 @@ footer p {
     .quote-box .input-code {
         background-position: 2% center;
     }
-    
+    .search-box button {
+        top: 95px;
+    }
   
 }
  
@@ -1398,11 +1400,7 @@ footer p {
         margin: 0;
     }
    
-    
-    .search-box button {
-        top: 95px;
-    }
-   
+ 
  
 
 }

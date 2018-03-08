@@ -1558,6 +1558,7 @@ footer p {
     }
     .search-box button {
         top: 90px;
+        right: 25px;
     }
     .quote-box .select-icon {
         top: 8px;

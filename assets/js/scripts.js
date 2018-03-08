@@ -74,6 +74,13 @@ $('.carousel').carousel({
   interval: 3000
 })
 
+// select style
+var defaulttext = $('.default-text').text();
+$('.selectDefault').text(defaulttext);
+$('.selectBox').on('change',function(){
+   var defaulttext2 = $('.selectBox').find(":selected").text(); 
+    $('.selectDefault').text(defaulttext2);
+});
 
 // mobile menu toggle
 var theToggle = document.getElementById('toggle');

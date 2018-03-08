@@ -608,7 +608,7 @@ h4 {
     font-size: 22px;
     margin-bottom: 25px;
 }
-.quote-box input[type="text"] , .quote-box select {
+.quote-box input[type="text"]{
     width: 100%;
     padding: 15px 30px 15px 35px;
     border: none;
@@ -623,7 +623,53 @@ h4 {
     height: auto !important;
    
 }
-  
+
+.quote-box .selectDiv {
+   width: 100%;
+    padding: 10px 30px 10px 35px;
+    overflow: hidden;
+    background: url('../img/icons/down-icon.png') no-repeat right #fff;
+    border: #ccc 1px solid;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    margin-bottom: 15px;
+ 
+    position: relative;
+    z-index:100;
+}
+
+.quote-box .selectDiv select {
+    margin:0px;
+    padding:0px;
+    opacity:0;
+    filter:alpha(opacity=0);
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display:block;
+    z-index:101;
+    
+}
+.quote-box .select-icon {
+    background: url(../img/icons/man-user-icon.png) #fff no-repeat;
+    background-position: 4% center;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: 10px;
+    top: 12px;
+}
+.quote-box .selectDiv select:focus {
+    outline: none;
+}
+.quote-box .selectDefault, .selectDiv option {
+     color: #2d2d2d;
+}
+
 .quote-box .option-caret {
     background: url(../img/icons/option-icon.jpg) #fff no-repeat;
    padding: 20px;
@@ -638,10 +684,7 @@ h4 {
     font-size: 18px;
     margin-bottom: 15px;
 }
-.quote-box .input-cover {
-    background: url(../img/icons/man-user-icon.png) #fff no-repeat;
-    background-position: 4% center;
-}
+ 
 .quote-box .input-code {
     background: url(../img/icons/postcode-icon.png) #fff no-repeat;
     background-position: 4% center;
@@ -664,6 +707,9 @@ h4 {
     font-size: 18px;
     padding-top: 3px;
 }
+.archive-box , .post-box-link{
+   padding: 20px 25px 20px 15px;
+}
 .popular-post {
     margin-bottom: 30px;
 }
@@ -677,7 +723,7 @@ h4 {
     text-transform: uppercase;
 }
 .popular-box , .archive-box  {
-    padding: 20px 25px 20px 15px;
+ 
     border: 1px solid #ebebeb;
     margin-bottom: 15px;
     border-radius: 4px;
@@ -691,6 +737,9 @@ h4 {
 }
 .post-box-link {
     display: flex;
+}
+.post-box-link:hover {
+    background-color: #f2f2f2;
 }
 .img-post {
     display: inline-block;
@@ -1303,6 +1352,9 @@ footer p {
     #sidebar {
         margin-top: 40px;
     }
+    .quote-box .input-code {
+        background-position: 2% center;
+    }
     
   
 }
@@ -1485,7 +1537,7 @@ footer p {
         right: -25px;
     }
     #inner-content .container {
-        padding: 20px;
+        padding: 40px;
     }
     #inner-content {
         padding: 0 20px;
@@ -1502,13 +1554,20 @@ footer p {
     .post-box-link {
         display: block;
     }
-    .quote-box input[type="text"], .quote-box select , .search-box input[type="text"]{
+    .quote-box input[type="text"], .quote-box .selectDiv , .search-box input[type="text"]{
         font-size: 11px;
-        padding: 10px 10px 10px 25px;
+        padding: 10px 10px 10px 30px;
     }
     .search-box button {
         top: 90px;
     }
+    .quote-box .select-icon {
+        top: 8px;
+    }
+    #inner-content .col-md-12 {
+        padding: 0;
+    } 
+}
 @media screen and (max-width: 320px) {
     .slick-slide {
         margin: 0px 14px;

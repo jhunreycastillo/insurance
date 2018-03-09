@@ -44,12 +44,12 @@ $(document).on('ready', function() {
 	        slidesToScroll: 2,
 	        variableWidth: false
 	      }
-	    } 
+	    }
   ]
   });
 
 // page down script
-  $(".page-down").on('click', function(event) {
+  $(".slider-page-down").on('click', function(event) {
     if (this.hash !== "") {
       event.preventDefault();
       var hash = this.hash;
@@ -58,16 +58,22 @@ $(document).on('ready', function() {
       }, 800, function(){
         window.location.hash = hash;
       });
-    } 
+    }
   });
 });
 
-$('.dropdown').hover(function() {
-  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
-}, function() {
-  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
-
-});
+$(function() {
+       $(".dropdown").hover(
+           function(){
+             $(this).addClass('open-dropdown'),
+             $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+           },
+           function(){
+             $(this).removeClass('open-dropdown'),
+             $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+           }
+       );
+   });
 
 // carousel script
 $('.carousel').carousel({
@@ -75,11 +81,11 @@ $('.carousel').carousel({
 })
 
 // select style
-var defaulttext = $('.default-text').text();
-$('.selectDefault').text(defaulttext);
-$('.selectBox').on('change',function(){
-   var defaulttext2 = $('.selectBox').find(":selected").text(); 
-    $('.selectDefault').text(defaulttext2);
+var defaulttext = $('.quote-default-text').text();
+$('.quote-selectDefault').text(defaulttext);
+$('.quote-selectBox').on('change',function(){
+   var defaulttext2 = $('.quote-selectBox').find(":selected").text();
+    $('.quote-selectDefault').text(defaulttext2);
 });
 
 // mobile menu toggle

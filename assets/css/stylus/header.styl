@@ -1,17 +1,10 @@
-border-radius(val)
-  -webkit-border-radius: val
-  -moz-border-radius: val
-  -ms-border-radius: val
-  -o-border-radius: val
-  border-radius: val
 
  header
     padding: 20px 0
     position: relative
     width: 100%
-
- header .container
-    position: static
+    .container
+      position: static
 
  #top-bg
     background-color: #538842
@@ -20,13 +13,14 @@ border-radius(val)
     position: absolute
     top: 0
 
- #logo ,  #top-menu , .top-menu-list
+ #top-menu,
+ .top-menu-list,
+ #logo
     float: left
 
- #logo a
-    display: block
-
- #side-right , .help-center , .call-text
+ #side-right,
+ .header-help-center,
+ .header-call-text
     float: right
 
  .navbar
@@ -36,20 +30,18 @@ border-radius(val)
 .top-menu-list
     padding: 0
     margin: 10px 0 0 0
+    li
+      display: inline-block
+      margin-right: 30px
+      a
+        display: inline-block
+        font-size var-font-size + 2
+        font-family font-bold
+        color: #373737
+        position: relative
+      a:hover
+        color: #73AF47
 
-.top-menu-list li
-    display: inline-block
-    margin-right: 30px
-
-.top-menu-list li a
-    display: inline-block
-    font-size: 14px
-    font-family: 'ProximaNovaBold'
-    color: #373737
-    position: relative
-
-.top-menu-list li a:hover
-    color: #73AF47
 
 #toggle
     display: none
@@ -59,41 +51,33 @@ border-radius(val)
     position: absolute
     top: 45px
     right: 40px
+    span
+      position: relative
+    span:after
+      top: 9px
+    span:before
+      top: -9px
+    span,
+    span:before,
+    span:after
+      display: block
+      content: ""
+      position: absolute
+      left: 0
+      width: 100%
+      height: 5px
+      background-color: #888
+      transition(all 0.3s ease-in-out 200ms)
+      backface-visibility: hidden
+      border-radius(2px)
 
-#toggle span:after,
-#toggle span:before
-  content: ""
-  position: absolute
-  left: 0
-  top: -9px
-
-#toggle span:after
-  top: 9px
-
-#toggle span
-  position: relative
-  display: block
-
-
-#toggle span,
-#toggle span:after,
-#toggle span:before
-  width: 100%
-  height: 5px
-  background-color: #888
-  transition: all 0.3s
-  backface-visibility: hidden
-  border-radius(2px)
-
-
-#toggle.on span
-  background-color: transparent
-
-#toggle.on span:before
-  transform: rotate(45deg) translate(5px, 5px)
-
-#toggle.on span:after
-  transform: rotate(-45deg) translate(7px, -8px)
+#toggle.on
+  span
+    background-color: transparent
+  span:before
+    transform: rotate(45deg) translate(5px, 5px)
+  span:after
+    transform: rotate(-45deg) translate(7px, -8px)
 
 #toggle.on + #side-right
   opacity: 1
@@ -113,10 +97,7 @@ border-radius(val)
   content: ""
   display: block
 
-.logo
-    display: block
-
-.call-icon
+.header-call-icon
     display: inline-block
     background-color: #73af47
     color: #fff
@@ -124,19 +105,19 @@ border-radius(val)
     width: 35px
     text-align: center
     border-radius(50%)
-    font-size: 18px
+    font-size var-font-size + 6
     padding-top: 5px
     margin: 8px 10px 0
 
-.call-text p
-    font-size: 22px
-    line-height: 22px
-    margin: 0
-
-.call-text p > span
-    color: #f39c12
-    font-size: 10px
-    display: block
+.header-call-text
+    p
+      font-size var-font-size + 10
+      line-height: 22px
+      margin: 0
+      span
+        color: #f39c12
+        font-size var-font-size - 2
+        display: block
 
 /*mega menu styles*/
 .dropdown
@@ -149,53 +130,52 @@ border-radius(val)
     padding: 30px 0
     border-top: 2px solid #74a449
     background-color: #575757
+    p
+      color: #fff
+      margin-bottom: 5px
 
-.dropdown-menu p
-    color: #fff
-    margin-bottom: 5px
 
-.dropdown-menu p > img , .mega-menu-list img
+.dropdown-menu p > img ,
+.mega-menu-list img
     margin-right: 10px
 
-.open > a:after
-    font-size: 0px
-    line-height: 0%
-    width: 0px
-    border-bottom: 15px solid #74a449
-    border-left: 15px solid transparent
-    border-right: 15px solid transparent
-    content: ""
-    display: block
-    position: absolute
-    bottom: -45px
-    left: 0
-    right: 0
-    margin: 0 auto
-
-.top-menu-list .open > a
-    color: #74a449
-    text-decoration: none
-
+.open-dropdown
+    .link-dropdown:after
+      font-size var-font-size - 12
+      line-height: 0%
+      width: 0px
+      border-bottom: 15px solid #74a449
+      border-left: 15px solid transparent
+      border-right: 15px solid transparent
+      content: ""
+      display: block
+      position: absolute
+      bottom: -45px
+      left: 0
+      right: 0
+      margin: 0 auto
+    .link-dropdown
+      color: #74a449
+      text-decoration: none
 
 .mega-menu-list
     padding: 0
+    li
+      display: block
+      padding: 15px 0
+      margin: 0
+      position: relative
+      border: none
+      .color1:hover
+        color: white
 
+.dropdown-arrow-list
+    li
+      padding-left: 15px
 
-.mega-menu-list li
-    display: block
-    padding: 15px 0
-    margin: 0
-    position: relative
-
-
-.top-menu-list .mega-menu-list li
-     border: none
-
-.arrow-list li
-    padding-left: 15px
-
-.arrow-list li:before , .archive-list li:before
-    font-size: 0px
+.dropdown-arrow-list li:before ,
+.sidebar-archive-list li:before
+    font-size var-font-size - 12
     line-height: 0%
     width: 0px
     content: ""
@@ -207,29 +187,32 @@ border-radius(val)
     left: 0
     top: 24px
 
-.mega-menu-list2.arrow-list li:before
-    top: 14px
+.mega-menu-list2.dropdown-arrow-list
+    li:before
+      top: 14px
+    li
+      padding: 5px 0 0 15px
 
-.mega-menu-list2.arrow-list li
-    padding: 5px 0 0 15px
 
-.mega-menu-list li a
-    color: #fff
-    font-size: 16px
+.mega-menu-list
+    li
+      a
+        color: #fff
+        font-size var-font-size + 4
 
-.mega-menu-list2 li a
-    font-size: 13px
-    font-family: 'ProximaNovaRegular'
+.mega-menu-list2
+    li
+      a
+        font-size var-font-size + 1
+        font-family font-regular
+      megamenu-request-call
+        font-size var-font-size
+        font-weight: normal
 
-.mega-menu-list li .request-call
-    font-size: 12px
-    font-weight: normal
-
-.mega-last li
-    text-align: center
-
-.mega-last li:first-child
-    padding: 10px 0 5px
-
-.mega-last li:last-child
-   padding: 0
+.mega-last
+    li
+      text-align: center
+    li:first-child
+      padding: 10px 0 5px
+    li:last-child
+      padding: 0

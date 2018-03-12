@@ -40,57 +40,31 @@
       margin-bottom: 25px
     p
       margin: 0
-    input[type="text"]
+    input[type="text"],
+      select
       width: 100%
-      padding: 15px 30px 15px 35px
       border: none
       color: #2d2d2d
       font-size var-font-size + 2
       border-radius(4px)
       margin-bottom: 15px
-    .quote-selectDiv
-      width: 100%
-      padding: 10px 30px 10px 35px
-      overflow: hidden
-      background: url('../img/icons/down-icon.png') no-repeat right #fff
-      border: #ccc 1px solid
-      border-radius(4px)
-      margin-bottom: 15px
-      position: relative
-      z-index:100
-      select
-        margin:0px
-        padding:0px
-        opacity:0
-        position:absolute
-        top:0
-        left:0
-        width:100%
-        height:100%
-        display:block
-        z-index:101
-      .quote-select-icon
-        background: url(../img/icons/man-user-icon.png) #fff no-repeat
-        background-position: 4% center
-        position: absolute
-        height: 20px
-        width: 20px
-        left: 10px
-        top: 12px
-      select:focus
-        outline: none
-      option
-        color: #2d2d2d
-    .quote-selectDefault
-        color: #2d2d2d
+    input[type="text"]
+      padding: 15px 30px 15px 35px
+    select
+      padding: 14px 30px 14px 30px
+      -moz-appearance: window;
+      -webkit-appearance: none;
     input[type="submit"]
       width: 100%
       font-size var-font-size + 6
       margin-bottom: 15px
-    .input-code
+    .quote-input-code
       background: url(../img/icons/postcode-icon.png) #fff no-repeat
       background-position: 4% center
-
+    .quote-select-code
+      background-image: url(../img/icons/man-user-icon.png), url(../img/icons/down-icon.png)
+      background-repeat: no-repeat, no-repeat
+      background-position:  4% center, right, center
 .quote-call-num
     font-size var-font-size + 8
     font-weight: bold

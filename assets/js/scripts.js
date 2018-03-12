@@ -80,13 +80,7 @@ $('.carousel').carousel({
   interval: 3000
 })
 
-// select style
-var defaulttext = $('.quote-default-text').text();
-$('.quote-selectDefault').text(defaulttext);
-$('.quote-selectBox').on('change',function(){
-   var defaulttext2 = $('.quote-selectBox').find(":selected").text();
-    $('.quote-selectDefault').text(defaulttext2);
-});
+ 
 
 
 // mobile menu toggle

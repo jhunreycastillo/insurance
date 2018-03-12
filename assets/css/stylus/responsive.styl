@@ -343,19 +343,15 @@
          right: -25px
 
      /* blog style */
-    .main-blog-meta span
-        display: block
 
     #pagination li
         margin: 0
 
-    .popular-post-box-link , .popular-box .popular-meta
-        display: block
 
     /* widget style */
-    .widget-quote-box input[type="text"], .widget-quote-box .quote-selectDiv , .widget-search-box input[type="text"]
+    .widget-quote-box input[type="text"], .widget-quote-box select , .widget-search-box input[type="text"]
         font-size: 11px
-        padding: 10px 10px 10px 30px
+        padding: 10px 10px 10px 40px
 
     .widget-search-box button
         top: 90px
@@ -363,6 +359,11 @@
 
     .widget-quote-box .select-icon
         top: 8px
+
+    /* collapse style */
+    .panel-heading
+      a
+        font-size: 17px
 
     /* footer style */
     footer
@@ -375,6 +376,9 @@
     #main-blog-pagination
         li
             margin: 0
+    .panel-body
+      ul
+        padding: 0
 
 @media screen and (max-width: 320px)
     .slick-slide

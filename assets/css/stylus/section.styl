@@ -324,13 +324,20 @@
     position: relative
     padding: 100px 0 60px
     background-color: #fafafa
-    .inner-main-title:after
+    .inner-main-title:after,
+    .inner-main-title2:after
       background: linear-gradient(140deg, #75a245 0%, #71a145 50%, #538842 75%)
-      width: 170px
       height: 6px
       display: block
       content: ""
-      margin-top: 10px
+      margin-top: 15px
+    .inner-main-title2:after
+      width: 100px
+    .inner-main-title:after
+      width: 170px
+    .inner-main-title2
+      color: #292929
+      margin-bottom: 25px
     h2
       font-size var-font-size + 20
       font-family font-bold
@@ -340,6 +347,69 @@
       background-color: #fff
       padding: 70px 80px
       box-shadow 0px 0px 4px 0px rgba(70,70,70,0.1)
+
+.inner-content-wrap
+    padding-right: 40px
+    .protection-title
+      font-size: 24px
+      font-family font-bold
+    p,
+    .protection-title
+      margin-bottom: 30px
+
+
+/* company details */
+.panel
+    margin-bottom: 30px
+.panel-title
+    margin: 0
+.panel-heading
+    padding: 0
+    border:0
+    background-color: #707070
+    border-radius(4px 4px 0 0)
+    a,
+    a:active
+      display: block
+      padding: 15px
+      color: #fff
+      font-size: 20px
+      font-weight: bold
+      text-decoration: none
+    a:before
+      background: url(../img/icons/collapse-icon.png) no-repeat
+      display: block
+      width: 25px
+      height: 25px
+      content: ""
+      float: right;
+      transition: all 0.5s;
+.panel-body
+    padding: 30px
+    border: 1px solid #ebebeb
+    border-radius(0 0 4px 4px)
+    h4
+      color: #71be59
+      font-size: 20px
+      font-weight: bold
+      margin-bottom: 25px
+    ul
+      padding-left: 20px;
+    li
+      display: block
+      margin-bottom: 20px
+      position: relative
+      padding-left: 20px
+    span
+      font-family: font-semibold
+    li:before
+      left: 0
+      top: 6px
+      background: url("../img/icons/collapse-check.png") no-repeat right center
+      content: ''
+      position: absolute
+      width: 11px
+      height: 9px
 
 /*archive section*/
 .main-blog-post-title
@@ -357,7 +427,6 @@
 
 .main-blog-post-date
     margin-right: 20px
-    font-weight: bold
 
 .main-blog-post-date:before
 .main-blog-post-author:before
@@ -382,10 +451,6 @@
 .main-blog-post .btn,
 .blog-single-post .btn
     font-size var-font-size + 4
-
-.blog-single-post
-    p
-      margin-bottom: 30px
 
 
 #main-blog-pagination
@@ -432,3 +497,29 @@
       a:hover
         background: linear-gradient(140deg, #75a245 0%, #71a145 50%, #538842 75%)
         color: #fff
+
+/*company section*/
+.company-box
+  padding: 15px
+  border: 1px solid #ebebeb
+  border-radius(6px)
+  text-align: center
+  position: relative
+  min-height: 200px
+  margin-bottom: 20px
+  .company-check-icon
+    display: block
+    position: absolute
+    top: 10px
+    right: 10px
+  p
+    font-size: 14px
+    margin: 0
+  img
+    margin: 10px 0 20px
+.company-box-link,
+.company-box-link:hover
+  color: #474747
+  display: block
+.company-box-link:hover
+  background: #f2f2f2

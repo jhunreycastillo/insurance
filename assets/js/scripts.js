@@ -88,6 +88,7 @@ $('.quote-selectBox').on('change',function(){
     $('.quote-selectDefault').text(defaulttext2);
 });
 
+
 // mobile menu toggle
 var theToggle = document.getElementById('toggle');
 function hasClass(elem, className) {

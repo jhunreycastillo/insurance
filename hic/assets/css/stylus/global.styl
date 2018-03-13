@@ -1,0 +1,170 @@
+
+@font-face
+ font-family 'ProximaNovaRegular'
+ src url('fonts/ProximaNovaRegular.eot')
+ src  url('fonts/ProximaNovaRegular.eot') format('embedded-opentype'),
+   	url('fonts/ProximaNovaRegular.woff2') format('woff2'),
+   	url('fonts/ProximaNovaRegular.woff') format('woff'),
+   	url('fonts/ProximaNovaRegular.ttf') format('truetype'),
+   	url('fonts/ProximaNovaRegular.svg#ProximaNovaRegular') format('svg')
+
+@font-face
+ font-family 'ProximaNovaSimibold'
+ src url('fonts/ProximaNovaSimibold.eot')
+ src  url('fonts/ProximaNovaSimibold.eot') format('embedded-opentype'),
+       url('fonts/ProximaNovaSimibold.woff2') format('woff2'),
+       url('fonts/ProximaNovaSimibold.woff') format('woff'),
+       url('fonts/ProximaNovaSimibold.ttf') format('truetype'),
+       url('fonts/ProximaNovaSimibold.svg#ProximaNovaSimibold') format('svg')
+
+@font-face
+  font-family 'ProximaNovaLight'
+  src: url('fonts/ProximaNovaLight.eot')
+  src: url('fonts/ProximaNovaLight.eot') format('embedded-opentype'),
+       url('fonts/ProximaNovaLight.woff2') format('woff2'),
+       url('fonts/ProximaNovaLight.woff') format('woff'),
+       url('fonts/ProximaNovaLight.ttf') format('truetype'),
+       url('fonts/ProximaNovaLight.svg#ProximaNovaLight') format('svg')
+
+ @font-face
+  font-family: 'ProximaNovaBold'
+  src: url('fonts/ProximaNovaBold.eot')
+  src: url('fonts/ProximaNovaBold.eot') format('embedded-opentype'),
+       url('fonts/ProximaNovaBold.woff2') format('woff2'),
+       url('fonts/ProximaNovaBold.woff') format('woff'),
+       url('fonts/ProximaNovaBold.ttf') format('truetype'),
+         url('fonts/ProximaNovaBold.svg#ProximaNovaBold') format('svg')
+
+
+ @font-face
+     font-family: 'NunitoSansBold'
+     src: url('fonts/NunitoSansBold.eot')
+     src: url('fonts/NunitoSansBold.eot') format('embedded-opentype'),
+          url('fonts/NunitoSansBold.woff2') format('woff2'),
+          url('fonts/NunitoSansBold.woff') format('woff'),
+          url('fonts/NunitoSansBold.ttf') format('truetype'),
+          url('fonts/NunitoSansBold.svg#NunitoSansBold') format('svg')
+
+
+// variable
+var-font-size = 12px
+font-bold = 'ProximaNovaBold'
+font-bold2 = 'NunitoSansBold'
+font-semibold = 'ProximaNovaSimibold'
+font-regular = 'ProximaNovaRegular'
+font-light = 'ProximaNovaLight'
+border-radius(val)
+  -webkit-border-radius: val
+  -moz-border-radius: val
+  -ms-border-radius: val
+  -o-border-radius: val
+  border-radius: val
+
+transition($args)
+  -webkit-transition: $args
+  -moz-transition: $args
+  -ms-transition: $args
+  -o-transition: $args
+  transition: $args
+
+box-shadow(args...)
+   -webkit-box-shadow args
+   -moz-box-shadow args
+   -ms-box-shadow args
+   -o-box-shadow args
+   box-shadow args
+
+a:hover
+    text-decoration: none
+    color: white
+
+*
+    transition(all 0.5s ease-in-out)
+    box-sizing: border-box
+
+body
+     color: #373737
+     font-size var-font-size + 4
+     font-family font-regular
+
+h1
+    font-size var-font-size + 30
+
+h2
+     font-size var-font-size + 26
+
+h4
+     font-size var-font-size + 10
+
+strong
+   font-family font-bold
+
+
+.form-group
+    position: relative
+
+.clear
+    clear: both
+
+.btn
+    font-size var-font-size + 8
+    padding: 15px 65px
+    cursor: pointer
+
+.btn:after
+    content: ''
+    display: inline-block
+    width: 25px
+    height: 17px
+    background: url(../img/icons/left-icon.png) no-repeat
+    position: relative
+    margin: 0 0 0 10px
+    top: 2px
+
+.main-bg
+        background: linear-gradient(140deg, #378a9e 0%, #3f94a9 50%, #4196aa 75%)
+
+.main-bg2
+        background: linear-gradient(140deg, #177a95 0%, #2f96ad 50%, #43adc1 75%)
+
+.btn2
+    font-size var-font-size + 2
+    padding: 10px
+    width: 220px
+    text-align: center
+    border-radius(30px);
+
+.color1
+    background-color: #71be59
+    border-bottom: 4px solid #67aa52
+    color: white
+    font-family font-bold
+
+.color1:hover
+    background-color: #67aa52;
+    color: white
+
+.default-line
+    border: 6px solid #f39c12
+    width: 95px
+    float: left
+    margin: 0 0 15px 0
+    display: block
+    border-radius(5px)
+
+.sub-title
+    font-size var-font-size + 7
+
+.mobile
+    display: none
+
+section
+    h2
+      color #69a646
+
+
+@import "header";
+@import "section";
+@import "sidebar";
+@import "footer";
+@import "responsive";

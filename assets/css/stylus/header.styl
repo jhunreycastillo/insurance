@@ -1,10 +1,10 @@
 
  header
-    padding: 20px 0
     position: relative
     width: 100%
     .container
       position: static
+      padding: 0
 
  #top-bg
     background-color: #538842
@@ -17,14 +17,15 @@
  .top-menu-list,
  #logo
     float: left
-
+ #logo
+    padding: 10px 0
  #side-right,
  .header-help-center,
  .header-call-text
     float: right
 
  .header-help-center
-    margin-top: -10px;
+    padding: 10px 0
 
  .navbar
     padding: 0
@@ -35,25 +36,25 @@
     margin: 0
     li
       display: inline-block
-      margin-right: 30px
+      margin-right: 35px
       a
         display: inline-block
         font-size var-font-size + 2
         font-family font-bold
         color: #373737
         position: relative
+        padding: 22px 0 30px;
       a:hover
         color: #73AF47
-
-
 #toggle
     display: none
     width: 28px
-    height: 25px
+    height: 35px
     margin: 0 auto
     position: absolute
-    top: 45px
-    right: 40px
+    top: 25px
+    right: 100px
+    padding-top: 10px
     span
       position: relative
     span:after
@@ -88,7 +89,6 @@
 
 #side-right
   position: static
-  padding: 10px
   margin: auto
   text-align: center
   border-radius(4px)
@@ -104,19 +104,20 @@
     display: inline-block
     background-color: #73af47
     color: #fff
-    height: 30px
-    width: 30px
+    height: 27px
+    width: 27px
     text-align: center
     border-radius(50%)
     font-size var-font-size + 4
-    padding-top: 5px
-    margin: 12px 10px 0
+    padding-top: 3px
+    margin: 15px 10px 0 5px
 
 .header-call-text
     p
       font-size var-font-size + 10
       line-height: 22px
       margin: 0
+      color: #373737
       span
         color: #f39c12
         font-size var-font-size - 3
@@ -154,7 +155,7 @@
       content: ""
       display: block
       position: absolute
-      bottom: -45px
+      bottom: -5px
       left: 0
       right: 0
       margin: 0 auto
@@ -172,6 +173,10 @@
       border: none
       .color1:hover
         color: white
+      a
+        padding: 0
+      .btn2
+        padding: 10px
 
 .dropdown-arrow-list
     li

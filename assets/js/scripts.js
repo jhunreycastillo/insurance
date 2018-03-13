@@ -80,7 +80,16 @@ $('.carousel').carousel({
   interval: 3000
 })
 
- 
+var select = '<option>Your Current Age </option>';
+   for (i=18;i<=74;i++){
+
+       if (i <= 73) {
+          select += '<option val=' + i + '>' + i + ' years old</option>';
+       } else if (i == 74) {
+           select += '<option val=' + i + '>' + i + ' + years old</option>';
+       }
+   }
+   $('.quote-select-code').html(select);
 
 
 // mobile menu toggle

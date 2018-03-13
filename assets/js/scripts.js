@@ -81,11 +81,11 @@ $('.carousel').carousel({
 })
 
 var select = '<option>Your Current Age </option>';
-   for (i=18;i<=74;i++){
+   for (i=18;i<=75;i++){
 
        if (i <= 73) {
           select += '<option val=' + i + '>' + i + ' years old</option>';
-       } else if (i == 74) {
+       } else if (i == 75) {
            select += '<option val=' + i + '>' + i + ' + years old</option>';
        }
    }

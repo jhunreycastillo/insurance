@@ -15,165 +15,173 @@
 
 
 @media screen and (max-width: 990px)
+
+
 /* header style */
-    header
-      padding 10px 0
-    #toggle
+  header
+    padding 10px 0
+  #toggle
+      display: block
+  #footer-menu
+      padding: 0
+      ul
+        padding: 0 5px 0 0
+  #side-right
+      opacity: 0;
+      visibility: hidden
+      transition: opacity .4s
+      position: absolute
+      z-index: 1000
+      width: 100%
+      left: 0
+      right: 0
+      padding: 0 40px 0 40px
+      text-align: left
+      background: white
+      box-shadow 0 1px 8px rgba(0,0,0,0.05)
+
+  .header-help-center
+      padding: 15px
+
+  .top-menu-list
+      li
         display: block
-    #footer-menu
-        padding: 0
-        ul
-          padding: 0 5px 0 0
-    #side-right
-        opacity: 0;
-        visibility: hidden
-        transition: opacity .4s
-        position: absolute
-        z-index: 1000
-        width: 100%
-        left: 0
-        right: 0
-        padding: 0 40px 0 40px
-        text-align: left
-        background: white
-        box-shadow 0 1px 8px rgba(0,0,0,0.05)
-
-    .header-help-center
-        padding: 15px
-
-    .top-menu-list
-        li
+        border-bottom: 1px solid #e2e2e2
+        a
           display: block
-          border-bottom: 1px solid #e2e2e2
-          a
-            display: block
-            padding: 15px
-          a:hover
-            background-color: #f2f2f2
+          padding: 15px
+        a:hover
+          background-color: #f2f2f2
 
 
-    .header-help-center,
-    .top-menu-list
-        float: none
+  .header-help-center,
+  .top-menu-list
+      float: none
 
-    .dropdown-menu
+  .dropdown-menu
+      position: relative
+      top: 0
+      p
+        margin-top: 20px
+
+  .mega-menu-list li
+      padding: 0
+
+  .mega-menu-list2.arrow-list
+      li::before
+        top: 25px;
+
+  .mega-last li
+      text-align: left
+
+  #logo,
+  #top-menu,
+  #side-right
+      float: none
+
+  .header-help-center,
+  .call-text
+      float: left
+
+  .navbar-toggleable-md
+      position: absolute
+      right: 0
+      top: 0
+      width: 100%
+      z-index: 1000
+
+  #top-menu
+      margin-top: 65px
+      background-color: #fff
+      padding: 20px
+
+  #top-menu:before , #top-menu:after
+      display: table
+      content: ""
+
+  #top-menu:after
+      clear: both
+
+  .mega-menu-list.mega-last li
+      border: none
+
+  .top-menu-list
+      li
+        a:hover
+          background: none
+          color: #f39c12
+        .btn2
+          padding: 10px
+
+  .mega-menu-list2.dropdown-arrow-list li::before
+      top: 24px
+
+  .open-dropdown
+      .link-dropdown:after
+        border: none
+
+  /* home blog style */
+  .home-blog-post-content
+      padding: 10px
+
+  .home-blog-content-post
+      padding: 10px
+
+  .home-blog-post-content p
+      font-size: 12px
+
+  /* rating style */
+  .our-rating
+      border: none
+
+  #service
+      .rating-box
+          padding: 20px
+
+  .protection-box
+      margin-bottom: 80px
+      min-height: auto
+
+  .protection-box-holder
+      margin-bottom: 0
+
+  #life-insurance
+      padding-bottom: 0
+      img
         position: relative
-        top: 0
-        p
-          margin-top: 20px
-
-    .mega-menu-list li
-        padding: 0
-
-    .mega-menu-list2.arrow-list
-        li::before
-          top: 25px;
-
-    .mega-last li
-        text-align: left
-
-    #logo,
-    #top-menu,
-    #side-right
-        float: none
-
-    .header-help-center,
-    .call-text
-        float: left
-
-    .navbar-toggleable-md
-        position: absolute
-        right: 0
-        top: 0
-        width: 100%
-        z-index: 1000
-
-    #top-menu
-        margin-top: 65px
-        background-color: #fff
-        padding: 20px
-
-    #top-menu:before , #top-menu:after
-        display: table
-        content: ""
-
-    #top-menu:after
-        clear: both
-
-    .mega-menu-list.mega-last li
-        border: none
-
-    .top-menu-list
-        li
-          a:hover
-            background: none
-            color: #f39c12
-          .btn2
-            padding: 10px
-
-    .mega-menu-list2.dropdown-arrow-list li::before
-        top: 24px
-
-    .open-dropdown
-        .link-dropdown:after
-          border: none
-
-    /* home blog style */
-    .home-blog-post-content
-        padding: 10px
-
-    .home-blog-content-post
-        padding: 10px
-
-    .home-blog-post-content p
-        font-size: 12px
-
-    /* rating style */
-    .our-rating
-        border: none
-
-    #service
-        .rating-box
-            padding: 20px
-
-    .protection-box
-        margin-bottom: 80px
-        min-height: auto
-
-    .protection-box-holder
-        margin-bottom: 0
-
-    #life-insurance
-        padding-bottom: 0
-        img
-          position: relative
-          bottom: 0
-          margin: 40px auto 0
-          display: block
-    .mobile
+        bottom: 0
+        margin: 40px auto 0
         display: block
 
-    .desktop
-        display: none
+  /*  policies style */
+  #policies-insurance
+      h3
+        margin: 0 0 20px 0;
 
-    .inner-content-wrap
-        padding: 0
+  /*  inner style */
+  .inner-content-wrap
+      padding: 0
+  .mobile
+      display: block
 
-    /* sidebar style */
-    #sidebar
-        margin-top: 40px
+  .desktop
+      display: none
 
-    .widget-quote-box .input-code
-        background-position: 2% center
+  /* sidebar style */
+  #sidebar
+      margin-top: 40px
 
-    .widget-search-box button
-        top: 95px
+  .widget-quote-box .input-code
+      background-position: 2% center
 
-    /* company box style */
-    .company-box
-        min-height: 200px
-        .company-check-icon
-          top: 20px
+  .widget-search-box button
+      top: 95px
+
+  /* company box style */
+  .company-box
+      min-height: 200px
+      .company-check-icon
+        top: 20px
 
 @media screen and (max-width: 768px)
     .service-box
@@ -193,7 +201,7 @@
          padding: 50px
 
     #testimonial-insurance .carousel-control-next-icon, #testimonial-insurance .carousel-control-prev-icon
-        height: 30px
+        height: 25px
 
     .carousel-control-prev
         left: -15px
@@ -204,12 +212,12 @@
     #featured-bg-4 .home-blog-post-content
         width: 100%
 
+    #footer-menu
+        padding: 0 15px
+
 @media screen and (max-width: 767px)
     .home-blog-post-content p
         font-size: 14px
-
-    .social-icons li
-        margin-right: 5px
 
     #featured-bg-1
         height: auto
@@ -315,6 +323,7 @@
     .main-blog-meta
         span
           display: block
+          font-size 14px
 
     /* section style */
     #why-insurance , .service-box.last  , .top-menu-list li

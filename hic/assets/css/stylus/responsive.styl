@@ -99,8 +99,6 @@
         .link-dropdown:after
           border: none
 
-
-
     /*  inner style */
     .inner-content-wrap
         padding: 0
@@ -132,13 +130,13 @@
 @media screen and (max-width: 580px)
     /* general style */
     h1
-        font-size: 34px
+        font-size var-font-size + 22
 
     h2
-        font-size: 28px
+        font-size var-font-size + 16
 
     .btn
-        font-size: 15px
+        font-size var-font-size + 3
         padding: 10px 0
         width: 100%
 
@@ -160,13 +158,13 @@
           padding: 0
 
     #inner-page h2
-         font-size: 28px
+         font-size var-font-size + 16
 
     /*sidebar style*/
     .main-blog-meta
         span
             display: block
-            font-size: 14px
+            font-size var-font-size + 2
 
     /* section style */
     #why-insurance , .service-box.last  , .top-menu-list li
@@ -192,7 +190,7 @@
 
     .inner-content-wrap
       .protection-title
-        font-size: 20px
+        font-size var-font-size + 8
 
     /* slick style */
     .slick-slide
@@ -211,9 +209,16 @@
 
 
     /* widget style */
-    .widget-quote-box input[type="text"], .widget-quote-box select , .widget-search-box input[type="text"]
-        font-size: 11px
-        padding: 10px 10px 10px 40px
+    .widget-quote-box
+      input[type="text"],
+      select
+        font-size var-font-size - 1
+        padding: 10px 10px 10px 35px
+
+     .widget-search-box
+        input[type="text"]
+          padding: 10px 35px 10px 20px
+          font-size var-font-size - 1
 
     .widget-search-box button
         top: 90px
@@ -225,7 +230,7 @@
     /* collapse style */
     .panel-heading
       a
-        font-size: 17px
+        font-size var-font-size + 5
 
     /* footer style */
     footer

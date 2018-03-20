@@ -18,9 +18,17 @@
         margin: 40px 0 0
 
     .score-today-wrap
-        visibility: hidden
+        display: none
 
-
+    .score-box
+      .score-table
+          thead
+            td
+              text-align: center
+    .supercal
+      table
+        td
+          height: 36px
 
 @media screen and (max-width: 1024px)
     .protection-box
@@ -207,6 +215,11 @@
       .company-check-icon
         top: 20px
 
+  .supercal
+    table
+      td
+        height: 26px
+
 @media screen and (max-width: 768px)
     .service-box
         margin-bottom: 40px
@@ -241,14 +254,17 @@
 
     .score-today-wrap
         display: none
-        
+
     .score-today
         margin-bottom: 40px
+
+    .circle-skill
+        margin-top: 20px
 
     .supercal
         table
           td
-            padding: 20px
+            height: 28px
 
 @media screen and (max-width: 767px)
     .home-blog-post-content p
@@ -268,6 +284,11 @@
 
     #blog-insurance .col-md-8.row .col-md-6 , #blog-insurance .col-md-8.row .col-md-12
         padding: 0;
+
+    .supercal
+        table
+          td
+            height: 60px
 
 @media screen and (max-width: 580px)
     /* general style */
@@ -433,16 +454,26 @@
     #footer-menu
        padding-left: 20px
 
-  .supercal
-    .supercal-header
-      .btn
-        width: auto
+    .news-btn
+        margin-right: 0
 
-@media screen and (max-width: 480px)
+    .supercal
+      .supercal-header
+        .btn
+          width: auto
+
+
+@media screen and (max-width: 500px)
     .supercal
       table
         td
-          padding: 10px
+          height: 50px
+
+@media screen and (max-width: 420px)
+    .supercal
+      table
+        td
+          height: 44px
 
 @media screen and (max-width: 380px)
     #main-blog-pagination
@@ -455,8 +486,13 @@
     .supercal
       table
         td
-          padding: 5px
+          height: 36px
 
 @media screen and (max-width: 320px)
     .slick-slide
         margin: 0px 14px
+
+    .supercal
+      table
+        td
+          height: 30px

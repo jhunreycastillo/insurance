@@ -21,6 +21,7 @@
         thead
           td
             font-size var-font-size - 2
+            text-align: right
         td
           font-size var-font-size
           padding: 5px 8px
@@ -127,8 +128,8 @@
 .pie
     position: absolute
     border: .09em solid #fff
-    width: .84em
-    height: .84em
+    width: .82em
+    height: .82em
     clip: rect(0, .5em, 1em, 0)
     border-radius(50%)
     -webkit-transform: rotate(0deg)
@@ -158,7 +159,7 @@
 
 .percircle
     position: relative
-    font-size var-font-size + 38
+    font-size var-font-size + 40
     width: 1em
     height: 1em
     border-radius(50%)
@@ -194,16 +195,16 @@
 
 .percircle:after
     position: absolute
-    top: .08em
-    left: .08em
+    top: .076em
+    left: .076em
     display: block
     content: " "
     border-radius: 50%
-    background-color: white
-    width: .84em
-    height: .84em
-    -webkit-transform: scale(1.1)
-    transform: scale(1.1)
+    background-color: #fff
+    width: .85em
+    height: .86em
+    -webkit-transform: scale(0.91)
+    transform: scale(0.91)
 
 .supercal
   width: 100%
@@ -242,7 +243,9 @@
       cursor: pointer
       font-size var-font-size
       text-align: center
-      padding: 5px
+      height: 28px
+      padding: 0
+      vertical-align: middle
     td:hover,
     td.selected
       background-color: #ff476b
@@ -259,6 +262,12 @@
 
 #score-news
   padding: 10px 0
+  .carousel-caption
+    position: relative
+    left: 0
+  .carousel-control-next,
+  .carousel-control-prev
+    display: none
   span
     color: #00ce76
     display: inline-block

@@ -27,7 +27,7 @@
 															<thead>
 																	<tr>
 																			<td></td>
-																			<td class="score-grey-box text-right">Applications this month</td>
+																			<td class="score-grey-box">Applications this month</td>
 																	</tr>
 															</thead>
 															<tbody>
@@ -179,7 +179,7 @@
 													</div>
 													<div class="col-md-4">
 														<div class="row">
-																<div class="col-md-6">
+																<div class="col-lg 6 col-md-12">
 																		<h3>Last 7 days</h3>
 																</div>
 																<div class="col-md-6">
@@ -220,7 +220,7 @@
 															<thead>
 																	<tr>
 																			<td></td>
-																			<td class="score-grey-box text-right">$ Inforce this month</td>
+																			<td class="score-grey-box">$ Inforce this month</td>
 																	</tr>
 															</thead>
 															<tbody>
@@ -271,16 +271,36 @@
 
 			<section id="score-news">
 					<div class="container">
-						<div class="row">
-								<div class="col-md-6">
+						<div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+						 <ol class="bullets carousel-indicators">
+								<li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+								<li data-target="#carouselIndicators" data-slide-to="1"></li>
+							</ol>
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<div class="carousel-caption d-md-block">
 										<a href="#" class="news-btn">news1</a>
-										<span>	Lorem ipsum dolor sit amet, noluisse scaevola. </span>
+										<span>	Lorem ipsum dolor sit amet, noluisse scaevola placerat te mea.  </span>
+									</div>
 								</div>
-								<div class="col-md-6">
+								<div class="carousel-item">
+									<div class="carousel-caption d-md-block">
 										<a href="#" class="news-btn">news2</a>
-										<span>Lorem ipsum dolor sit amet, noluisse scaevola. </span>
+										<span>Lorem ipsum dolor sit amet, noluisse scaevola placerat te mea. </span>
+									</div>
 								</div>
+
+							</div>
+							<a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
 						</div>
+
 					</div>
 			</section>
 		</div>

@@ -1,0 +1,273 @@
+#scoreboard-section
+    background-color: #f2f3f9
+    padding: 50px 0
+    h3
+      font-size var-font-size + 9
+      font-weight: bold
+
+.scoreboard-content
+    background-color: #fff
+    padding: 30px
+    box-shadow 0px 6px 10px 0px rgba(000,000,000,0.2)
+    border-radius(6px)
+
+.score-box
+    border-top: 4px solid #69bb90
+    border-radius(6px)
+    box-shadow 0px 2px 4px 0px rgba(000,000,000,0.2)
+    margin-bottom: 20px
+    .score-table
+        thead
+          td
+            font-size var-font-size - 2
+        td
+          font-size var-font-size
+          padding: 5px 8px
+          vertical-align: middle
+        .score-medium-num
+          font-size var-font-size + 12
+          text-align: center
+          color: #ff476b
+          font-weight: bold
+        .score-grey-box
+          background-color: #f5f5f5
+        .score-darkgrey-box
+          background-color: #efefef
+
+.score-box.high
+    margin-top: 60px
+
+.high-score-box
+    text-align: center
+    padding: 10px 5px
+    margin: 0
+    p
+      font-size var-font-size - 2
+      margin-bottom: 5px
+    .h-line
+      width: 6px
+      height: 2px
+      background-color: #6ba847
+      display: inline-block
+      vertical-align: middle
+
+.pink-text
+    color: #ff476b
+.green-text
+    color: #59cd90
+.borderRight
+    border-right: 1px solid #e9e9e9;
+
+.score-list-box.score-listgrid
+    max-width: 100%
+    -webkit-box-flex: 0
+    -webkit-flex: 0 0 100%
+    -ms-flex: 0 0 100%
+    flex: 0 0 100%
+
+.click-today,
+.click-last-day
+  padding: 6px 8px
+
+.click-today.active,
+.click-last-day.active
+  box-shadow 0px 0px 6px 0 rgba(000,000,000,0.1)
+  border: 1px solid #ededed
+
+.score-today-wrap
+  text-align: right
+  margin-bottom: 35px
+  a,
+  i
+    color: #939393
+
+.view-days
+  .score-box
+    text-align: center
+    min-height: 150px
+    position: relative
+    margin-bottom: 30px
+  p
+    font-size var-font-size
+  h2
+    font-weight: bold
+    font-size: 42px
+    position: absolute
+    left: 0
+    right: 0
+    top: 40%
+  .small-title
+    font-size var-font-size + 12
+  .small-btm-text
+    font-size var-font-size - 4
+  h3
+    color: #435e6d
+
+.grid-btm-text
+  border-top: 1px solid #cdcdcd
+  font-size var-font-size - 2
+  color: #989898
+  padding-top: 5px
+  position: absolute
+  left: 0
+  right: 0
+  bottom: 5px
+  width: 90%
+  margin: 0 auto
+
+.percircle.gt50 .slice,
+.rect-auto
+    clip: rect(auto, auto, auto, auto)
+
+
+.gt50 .fill,
+.percircle .bar,
+.pie
+    position: absolute;
+    border: .09em solid #fff;
+    width: .84em;
+    height: .84em;
+    clip: rect(0, .5em, 1em, 0);
+    border-radius: 50%;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+
+
+.bar
+    -webkit-backface-visibility: hidden
+    backface-visibility: hidden
+
+
+.gt50 .bar:after,
+.gt50 .fill,
+.pie-fill
+    -webkit-transform: rotate(180deg)
+    transform: rotate(180deg)
+
+.percircle *,
+.percircle:after,
+.percircle:before
+    box-sizing: content-box
+
+.percircle.animate:after,
+.percircle.animate>span
+    -webkit-transition: -webkit-transform .2s ease-in-out
+    transition: transform .2s ease-in-out
+
+.percircle
+    position: relative
+    font-size var-font-size + 38
+    width: 1em
+    height: 1em
+    border-radius(50%)
+    margin: 0 auto
+    background-color: #fcc16a
+    .animate
+      .bar
+        -webkit-transition: -webkit-transform .6s ease-in-out
+        transition: transform .6s ease-in-out
+    span
+      position: absolute
+      z-index: 1
+      width: 100%
+      top: 50%
+      height: 1em
+      margin-top: -8px
+      font-size var-font-size
+      color: #ff476b
+      display: block
+      text-align: center
+      white-space: nowrap
+      -webkit-transform: scale(1.3)
+      transform: scale(1.3)
+    .slice
+      position: absolute
+      width: 1em
+      height: 1em
+      clip: rect(0, 1em, 1em, .5em)
+    .center
+      float: none
+      margin: 0 auto
+
+.percircle:after
+    position: absolute
+    top: .08em
+    left: .08em
+    display: block
+    content: " "
+    border-radius: 50%
+    background-color: white
+    width: .84em
+    height: .84em
+    -webkit-transform: scale(1.1)
+    transform: scale(1.1)
+
+.supercal
+  width: 100%
+  .supercal-header
+    display: block
+    line-height: 30px
+    margin-bottom: 18px
+    text-align: center
+    position: relative
+    padding: 0 10px
+    .prev-month
+      float: left;
+    .next-month
+      float: right;
+    .btn
+      padding: 0
+      background: none
+      color: #9da3a7
+    .btn:after
+      margin: 0
+      background: none
+      width: auto
+      height: auto
+    .month
+      div
+        font-size var-font-size + 3
+  table
+    table-layout: fixed
+    background: #fff
+    margin-bottom: 40px
+    th
+      padding: 15px 5px
+      font-size var-font-size + 1
+      font-weight: normal
+    td
+      cursor: pointer
+      font-size var-font-size
+      text-align: center
+      padding: 5px
+    td:hover,
+    td.selected
+      background-color: #ff476b
+      color: #fff
+      border-radius(50%)
+    .month-prev,
+    .month-next
+      color: #bbbec1
+
+.supercal-month
+  position: relative
+  z-index: 0
+  overflow: hidden
+
+#score-news
+  padding: 10px 0
+  span
+    color: #00ce76
+    display: inline-block
+
+.news-btn
+  background-color: #00ce76
+  width: 120px
+  color: #fff
+  display: inline-block
+  text-align: center
+  padding: 15px 0
+  margin: 0 30px 5px 0
+
+.news-btn:hover
+  background-color: #ff476b

@@ -2,8 +2,9 @@
 $(document).on('ready', function() {
    $(".lender-slide").slick({
     dots: false,
+    autoplay:true,
     infinite: true,
- 	speed: 300,
+ 	  speed: 300,
     centerMode: false,
     slidesToShow: 8,
     slidesToScroll: 2,
@@ -47,6 +48,29 @@ $(document).on('ready', function() {
 	    }
   ]
   });
+
+  $(".score-slide").slick({
+   dots: false,
+   arrows: false,
+   autoplay:true,
+   infinite: true,
+   speed: 2000,
+   centerMode: false,
+   slidesToShow: 2,
+   slidesToScroll: 2,
+   variableWidth: false,
+   responsive: [
+
+     {
+       breakpoint: 768,
+       settings: {
+         slidesToShow: 1,
+         slidesToScroll: 1,
+         variableWidth: false
+       }
+     }
+ ]
+ });
 
 // page down script
   $(".slider-page-down").on('click', function(event) {

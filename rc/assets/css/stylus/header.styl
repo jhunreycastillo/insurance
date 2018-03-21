@@ -1,0 +1,228 @@
+
+ header
+    position: relative
+    width: 100%
+    .container
+      position: static
+      padding: 0
+
+ #top-bg
+    background: url(../img/top-bg.jpg) no-repeat
+    background-size: cover
+    height: 260px
+    width: 100%
+    position: absolute
+    top: 0
+
+ #top-menu,
+ .top-menu-list,
+ #logo
+    float: left
+ #logo
+    padding: 14px 0
+ #side-right,
+ .header-help-center,
+ .header-call-text
+    float: right
+
+ .header-help-center
+    padding: 10px 0
+    margin-top: 5px
+
+ .navbar
+    padding: 0
+    display: block
+
+.top-menu-list
+    padding: 0
+    margin: 0
+    li
+      display: inline-block
+      margin-right: 35px
+      a
+        display: inline-block
+        font-size var-font-size + 2
+        font-family font-bold
+        color: #373737
+        position: relative
+        padding: 25px 0 25px
+      a:hover
+        color: #73AF47
+#toggle
+    display: none
+    width: 28px
+    height: 35px
+    margin: 0 auto
+    position: absolute
+    top: 20px
+    right: 100px
+    padding-top: 10px
+    span
+      position: relative
+    span:after
+      top: 9px
+    span:before
+      top: -9px
+    span,
+    span:before,
+    span:after
+      display: block
+      content: ""
+      position: absolute
+      left: 0
+      width: 100%
+      height: 5px
+      background-color: #888
+      transition(all 0.3s ease-in-out 200ms)
+      backface-visibility: hidden
+      border-radius(2px)
+
+#toggle.on
+  span
+    background-color: transparent
+  span:before
+    transform: rotate(45deg) translate(5px, 5px)
+  span:after
+    transform: rotate(-45deg) translate(7px, -8px)
+
+#toggle.on + #side-right
+  opacity: 1
+  visibility: visible
+
+#side-right
+  position: static
+  margin: auto
+  text-align: center
+  border-radius(4px)
+
+#side-right:after
+  position: absolute
+  top: -15px
+  left: 95px
+  content: ""
+  display: block
+
+.header-call-icon
+    display: inline-block
+    background-color: #1a81c5
+    color: #fff
+    height: 27px
+    width: 27px
+    text-align: center
+    border-radius(50%)
+    font-size var-font-size + 4
+    padding-top: 3px
+    margin: 8px 10px 0 5px
+
+.header-call-text
+    p
+      font-size var-font-size + 10
+      margin: 0
+      color: #373737
+      span
+        color: #36879b
+        font-size var-font-size - 3
+        display: block
+        font-family: font-semibold
+
+/*mega menu styles*/
+.dropdown
+    position: static
+
+.dropdown-menu
+    top: 100%
+    width: 100%
+    border: none
+    padding: 30px 0
+    border-top: 2px solid #74a449
+    background-color: #575757
+    p
+      color: #fff
+      margin-bottom: 5px
+
+
+.dropdown-menu p > img ,
+.mega-menu-list img
+    margin-right: 10px
+
+.open-dropdown
+    .link-dropdown:after
+      font-size var-font-size - 12
+      line-height: 0%
+      width: 0px
+      border-bottom: 15px solid #74a449
+      border-left: 15px solid transparent
+      border-right: 15px solid transparent
+      content: ""
+      display: block
+      position: absolute
+      bottom: -5px
+      left: 0
+      right: 0
+      margin: 0 auto
+    .link-dropdown
+      color: #74a449
+      text-decoration: none
+
+.mega-menu-list
+    padding: 0
+    li
+      display: block
+      padding: 15px 0
+      margin: 0
+      position: relative
+      border: none
+      .color1:hover
+        color: white
+      a
+        padding: 0
+      .btn2
+        padding: 10px
+
+.dropdown-arrow-list
+    li
+      padding-left: 15px
+
+.dropdown-arrow-list li:before ,
+.sidebar-archive-list li:before
+    font-size var-font-size - 12
+    line-height: 0%
+    width: 0px
+    content: ""
+    display: block
+    border-top: 4px solid transparent
+    border-left: 8px solid #73af47
+    border-bottom: 4px solid transparent
+    position: absolute
+    left: 0
+    top: 24px
+
+.mega-menu-list2.dropdown-arrow-list
+    li:before
+      top: 14px
+    li
+      padding: 5px 0 0 15px
+
+
+.mega-menu-list
+    li
+      a
+        color: #fff
+        font-size var-font-size + 4
+
+.mega-menu-list2
+    li
+      a
+        font-size var-font-size + 1
+        font-family font-regular
+      megamenu-request-call
+        font-size var-font-size
+        font-weight: normal
+
+.mega-last
+    li
+      text-align: center
+    li:first-child
+      padding: 10px 0 5px
+    li:last-child
+      padding: 0

@@ -159,3 +159,35 @@
       top: 8px
     li:last-child
       margin: 0
+
+@media screen and (max-width: 990px)
+    #sidebar
+        margin-top: 40px
+    .widget-quote-box .input-code
+        background-position: 2% center
+    .widget-search-box button
+        top: 95px
+
+@media screen and (max-width: 580px)
+    .main-blog-meta
+        span
+            display: block
+            font-size var-font-size + 2
+            
+    .widget-quote-box
+      input[type="text"],
+      select
+        font-size var-font-size - 1
+        padding: 10px 10px 10px 35px
+
+     .widget-search-box
+        input[type="text"]
+          padding: 10px 35px 10px 20px
+          font-size var-font-size - 1
+
+    .widget-search-box button
+        top: 90px
+        right: 25px
+
+    .widget-quote-box .select-icon
+        top: 8px

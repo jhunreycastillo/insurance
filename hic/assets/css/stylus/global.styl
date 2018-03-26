@@ -168,4 +168,15 @@ section
 @import "section";
 @import "sidebar";
 @import "footer";
-@import "responsive";
+
+@media screen and (max-width: 580px)
+    h1
+        font-size var-font-size + 22
+
+    h2
+        font-size var-font-size + 16
+
+    .btn
+        font-size var-font-size + 3
+        padding: 10px 0
+        width: 100%

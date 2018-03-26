@@ -125,4 +125,79 @@
         display: block
         font-family: font-semibold
 
- 
+
+@media screen and (max-width: 1200px)
+    .top-menu-list li
+        margin-right: 15px
+
+@media screen and (max-width: 990px)
+/* header style */
+    header
+      padding 10px 0
+    #toggle
+        display: block
+    #side-right
+        opacity: 0;
+        visibility: hidden
+        transition: opacity .4s
+        position: absolute
+        z-index: 1000
+        width: 100%
+        left: 0
+        right: 0
+        padding: 0 40px 0 40px
+        text-align: left
+        background: white
+        box-shadow 0 1px 8px rgba(0,0,0,0.05)
+    .header-help-center
+        padding: 15px
+    .top-menu-list
+        li
+          display: block
+          border-bottom: 1px solid #e2e2e2
+          margin-right: 0
+          a
+            display: block
+            padding: 15px
+          a:hover
+            background-color: #f2f2f2
+
+    .header-help-center,
+    .top-menu-list
+        float: none
+    #logo,
+    #top-menu,
+    #side-right
+        float: none
+    .header-help-center,
+    .call-text
+        float: left
+    .navbar-toggleable-md
+        position: absolute
+        right: 0
+        top: 0
+        width: 100%
+        z-index: 1000
+    #top-menu
+        margin-top: 65px
+        background-color: #fff
+        padding: 20px
+    #top-menu:before , #top-menu:after
+        display: table
+        content: ""
+    #top-menu:after
+        clear: both
+    .top-menu-list
+        li
+          a:hover
+            background: none
+            color: #f39c12
+
+@media screen and (max-width: 580px)
+    header
+      .container
+        padding: 0 15px
+    #side-right
+        padding: 0
+    #toggle
+        right: 20px

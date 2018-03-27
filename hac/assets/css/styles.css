@@ -1064,7 +1064,14 @@ footer p {
         text-align: right;
     }
 }
-
+@media screen and (max-width: 768px) {
+    .highlights-wrapper .container , .highlights-wrapper .col-xs-6 {
+        padding: 0 10px;
+    }
+    .highlights-wrapper .row {
+        margin: 0;
+    }
+}
 @media screen and (max-width: 360px) {
 
     .contact-wrapper {
@@ -1082,5 +1089,6 @@ footer p {
     img.start-now-arrow {
         margin-top: 10%;
     }
+   
 
 }

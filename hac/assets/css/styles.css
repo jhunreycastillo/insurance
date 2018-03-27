@@ -1072,6 +1072,11 @@ footer p {
         margin: 0;
     }
 }
+@media screen and (max-width: 380px) { 
+    .well.hl-tag h4 {
+        font-size: 11px;
+    }
+}
 @media screen and (max-width: 360px) {
 
     .contact-wrapper {

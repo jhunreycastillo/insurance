@@ -1,0 +1,63 @@
+/*footer section*/
+footer
+    padding: 40px 0
+    p
+      font-size var-font-size + 1
+      color: #808080
+      margin: 0
+
+#footer-logo
+    margin-bottom: 20px
+
+#footer-menu
+    margin-top: 10px
+    padding-left: 40px
+    ul
+      padding: 0
+    li
+      display:block
+      font-size var-font-size + 1
+      margin-bottom: 10px
+      a
+        display: block
+        color: #10547a
+        font-family font-bold2
+      a:hover
+        color: #ed9826
+
+.social-icons
+    padding: 0
+    margin: 10px 0 20px
+    li
+      display: inline-block
+      margin-right: 15px
+    a
+      display: block
+      background: #a9a9a9
+      color: white
+      height: 34px
+      width: 34px
+      border-radius(50%)
+      text-align: center
+      padding-top: 8px
+    a:hover
+      background-color: #ed9826
+    i
+      font-size var-font-size + 6
+
+@media screen and (max-width: 990px)
+    #footer-menu
+        padding: 0
+        ul
+          padding: 0 5px 0 0
+
+@media screen and (max-width: 768px)
+    #footer-menu
+        padding: 0 15px
+
+@media screen and (max-width: 580px)
+    footer
+       padding: 20px 0
+
+    #footer-menu
+       padding-left: 20px

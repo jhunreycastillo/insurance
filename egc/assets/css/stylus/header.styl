@@ -1,0 +1,200 @@
+
+ header
+    position: relative
+    width: 100%
+    .container
+      position: static
+      padding: 0
+
+ #top-bg
+    height: 260px
+    width: 100%
+    position: absolute
+    top: 0
+
+ #top-menu,
+ .top-menu-list,
+ #logo
+    float: left
+ #logo
+    padding: 14px 0
+ #side-right,
+ .header-help-center,
+ .header-call-text
+    float: right
+
+ .header-help-center
+    padding: 10px 0
+    margin-top: 5px
+
+ .navbar
+    padding: 0
+    display: block
+
+.top-menu-list
+    padding: 0
+    margin: 0
+    li
+      display: inline-block
+      margin-right: 50px
+      a
+        display: inline-block
+        font-size var-font-size + 2
+        font-family font-bold
+        color: #10547a
+        position: relative
+        padding: 25px 0 25px
+      a:hover
+        color: #f3932f
+    li:last-child
+      margin: 0
+#toggle
+    display: none
+    width: 28px
+    height: 35px
+    margin: 0 auto
+    position: absolute
+    top: 20px
+    right: 100px
+    padding-top: 10px
+    span
+      position: relative
+    span:after
+      top: 9px
+    span:before
+      top: -9px
+    span,
+    span:before,
+    span:after
+      display: block
+      content: ""
+      position: absolute
+      left: 0
+      width: 100%
+      height: 5px
+      background-color: #888
+      transition(all 0.3s ease-in-out 200ms)
+      backface-visibility: hidden
+      border-radius(2px)
+
+#toggle.on
+  span
+    background-color: transparent
+  span:before
+    transform: rotate(45deg) translate(5px, 5px)
+  span:after
+    transform: rotate(-45deg) translate(7px, -8px)
+
+#toggle.on + #side-right
+  opacity: 1
+  visibility: visible
+
+#side-right
+  position: static
+  margin: auto
+  text-align: center
+  border-radius(4px)
+
+#side-right:after
+  position: absolute
+  top: -15px
+  left: 95px
+  content: ""
+  display: block
+
+.header-call-icon
+    display: inline-block
+    background-color: #73af47
+    color: #fff
+    height: 27px
+    width: 27px
+    text-align: center
+    border-radius(50%)
+    font-size var-font-size + 4
+    padding-top: 3px
+    margin: 8px 10px 0 5px
+
+.header-call-text
+    p
+      font-size var-font-size + 10
+      margin: 0
+      color: #373737
+      span
+        color: #36879b
+        font-size var-font-size - 3
+        display: block
+        font-family: font-semibold
+
+
+@media screen and (max-width: 1200px)
+    .top-menu-list li
+        margin-right: 15px
+
+@media screen and (max-width: 990px)
+    header
+      padding 10px 0
+    #toggle
+        display: block
+    #side-right
+        opacity: 0;
+        visibility: hidden
+        transition: opacity .4s
+        position: absolute
+        z-index: 1000
+        width: 100%
+        left: 0
+        right: 0
+        padding: 0 40px 0 40px
+        text-align: left
+        background: white
+        box-shadow 0 1px 8px rgba(0,0,0,0.05)
+    .top-menu-list
+        li
+          display: block
+          border-bottom: 1px solid #e2e2e2
+          margin-right: 0
+          a
+            display: block
+            padding: 15px
+          a:hover
+            background-color: #f2f2f2
+
+    .header-help-center,
+    .top-menu-list
+        float: none
+    #logo,
+    #top-menu
+        float: none
+    .header-help-center,
+    .call-text
+        float: left
+    .navbar-toggleable-md
+        position: absolute
+        right: 0
+        top: 0
+        width: 100%
+        z-index: 1000
+    #top-menu
+        margin-top: 65px
+        background-color: #fff
+        padding: 20px
+    #top-menu:before , #top-menu:after
+        display: table
+        content: ""
+    #top-menu:after
+        clear: both
+    .top-menu-list
+        li
+          a:hover
+            background: none
+            color: #f39c12
+          .btn2
+            padding: 10px
+            width: 100%
+            margin-top: 15px
+@media screen and (max-width: 580px)
+    header
+      .container
+        padding: 0 15px
+    #toggle
+        right: 20px

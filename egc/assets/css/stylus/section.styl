@@ -1,0 +1,217 @@
+
+/*policies section */
+#policies-insurance
+    padding: 23px 0
+    background: url(../img/compare-bg.jpg) no-repeat
+    background-size: cover
+    h3
+      font-size var-font-size + 16
+      color: #fff
+      margin: 0 40px 0 0
+      display: inline-block
+      vertical-align: middle
+      font-family font-bold
+    .btn
+      display: inline-block
+      font-size var-font-size + 3
+      padding: 10px 40px
+
+/*inner section*/
+#inner-page
+    position: relative
+    padding: 100px 0 60px
+    background-color: #fafafa
+    .inner-main-title
+      font-size var-font-size + 19
+      margin-bottom: 5px
+    .inner-main-title:after
+      background: linear-gradient(140deg, #1d8099 0%, #379eb3 50%, #4db6c9 75%)
+      height: 6px
+      display: block
+      content: ""
+      margin-top: 15px
+      width: 175px
+    h2
+      font-size var-font-size + 20
+      font-family font-bold
+      margin-bottom: 20px
+
+#inner-content
+    .container
+      background-color: #fff
+      padding: 70px 80px
+      box-shadow 0px 0px 4px 0px rgba(70,70,70,0.1)
+
+.inner-content-wrap
+    padding-right: 40px
+    .protection-title
+      font-size: 24px
+      font-family font-bold
+    p
+      margin-bottom: 25px
+
+
+
+/*archive section*/
+.main-blog-post-title
+    color: #292929
+
+.main-blog-post
+    padding: 30px 0
+    border-bottom: 1px solid #e0e0e0
+
+.main-blog-meta
+    margin-bottom: 15px
+    span
+      color: #1b7f98
+
+.main-blog-excerpt
+    text-align: justify
+
+.main-blog-post-date
+    margin-right: 20px
+
+.main-blog-post-date:before
+.main-blog-post-author:before
+    display: inline-block
+    content: ""
+    height: 20px
+    width: 20px
+    position: relative
+    top: 5px
+    margin-right: 5px
+
+.main-blog-post-date:before
+    background: url(../img/icons/post-calendar-icon.png) no-repeat
+.main-blog-post-author:before
+    background: url(../img/icons/post-author-icon.png) no-repeat
+
+.main-blog-post img,
+.blog-single-post img
+    margin-bottom: 40px
+    width: 100%
+
+.main-blog-post .btn,
+.blog-single-post .btn
+    font-size var-font-size + 4
+.blog-single-post
+    p
+      font-family font-regular
+    h4
+      font-size var-font-size + 8
+      font-family font-bold
+    h6
+      font-size var-font-size + 4
+    ol
+      li
+        font-family font-bold
+
+#main-blog-pagination
+    margin: 30px 0 0
+    padding: 0
+    text-align: center
+    li
+      display: inline-block
+      margin-right: 10px
+      position: relative
+      a
+        border: 1px solid #46afc4
+        border-radius(50%)
+        font-size var-font-size + 3
+        color: #777
+        width: 34px
+        height: 34px
+        text-align: center
+        font-family font-semibold
+      .pagination-dot
+        border: none
+        background-size: none
+        padding: 0;
+      .pagination-dot:hover
+        background: none
+        color: #777
+      .pagination-next
+        background: #dedede
+        border: none
+      .pagination-next:hover
+        background: #f2f2f2
+      .pagination-next:before
+        width: 0px
+        content: ""
+        display: block
+        border-top: 6px solid transparent
+        border-left: 10px solid #71be59
+        border-bottom: 6px solid transparent
+        position: absolute
+        left: 0
+        right: 0
+        margin: 2px auto 0
+      .active
+      a:hover
+        background: linear-gradient(140deg, #288ca4 0%, #3ea5ba 50%, #4bb4c6 75%)
+        color: #fff
+
+@media screen and (max-width: 1200px)
+    .compare-box2
+        padding: 50px 0 50px 0
+    .protection-box
+        padding: 60px 20px 40px
+
+@media screen and (max-width: 990px)
+    .inner-content-wrap
+        padding: 0
+
+    #policies-insurance
+      h3
+        margin: 0 0 20px 0;
+
+@media screen and (max-width: 580px)
+    #inner-content
+        padding: 0 20px
+        .container
+            padding: 40px
+        .col-md-12
+          padding: 0
+
+    #inner-page h2
+         font-size var-font-size + 16
+
+    .inner-content-wrap
+      .protection-title
+        font-size var-font-size + 8
+
+    #why-insurance , .service-box.last  , .top-menu-list li
+       margin: 0
+
+    #service, #used-insurance, #protection-insurance
+       padding: 20px 0
+
+    #life-insurance
+       padding: 20px 0 0
+
+    .protection-box.nm-m
+       margin-bottom: 40px
+
+    .protection-box
+       padding: 60px 20px 20px
+       margin-bottom: 80px
+
+    .compare-box ,  .compare-box2
+      padding: 40px 20px
+
+    .slick-slide
+        margin: 0px 15px
+
+    .slick-prev
+        left: -30px
+
+    .slick-next
+        right: -25px
+
+    #pagination li
+       margin: 0
+
+@media screen and (max-width: 380px)
+    #main-blog-pagination
+       li
+           margin: 0

@@ -1,4 +1,9 @@
-
+.faq-calculate,
+#policies-insurance
+    .btn
+      display: inline-block
+      font-size var-font-size + 3
+      padding: 10px 40px
 /*policies section */
 #policies-insurance
     padding: 23px 0
@@ -11,11 +16,7 @@
       display: inline-block
       vertical-align: middle
       font-family font-bold
-    .btn
-      display: inline-block
-      font-size var-font-size + 3
-      padding: 10px 40px
-
+ 
 /*inner section*/
 #inner-page
     position: relative
@@ -151,12 +152,172 @@
         background: linear-gradient(140deg, #288ca4 0%, #3ea5ba 50%, #4bb4c6 75%)
         color: #fff
 
+.faq-panel .panel
+    margin-bottom: 10px
+.faq-panel.panel-wrapper
+    margin-top: 30px
+.faq-panel .panel-title
+    margin: 0
+.faq-panel .panel-heading
+    padding: 0
+    border:0
+    background-color: #354954
+    border-radius(4px 4px 4px 4px)
+    a,
+    a:active
+      display: block
+      padding: 15px
+      color: #fff
+      font-size: 19px
+      font-weight: bold
+      text-decoration: none
+    a:before
+      background: url(../img/icons/collapse-icon.png) no-repeat
+      display: block
+      width: 25px
+      height: 25px
+      content: ""
+      float: right;
+      transition: all 0.5s;
+.faq-panel .panel-body
+    padding: 30px
+    border: 1px solid #ebebeb
+    border-radius(0 0 4px 4px)
+    p
+      margin-bottom: 25px
+    h4
+      color: #71be59
+      font-size: 20px
+      font-weight: bold
+      margin-bottom: 25px
+    ul
+      padding-left: 20px;
+      margin-bottom: 30px
+    li
+      display: block
+      margin-bottom: 20px
+      position: relative
+      padding-left: 30px
+    span
+      font-family: font-semibold
+    li:before
+      left: 0
+      top: 6px
+      background: url("../img/icons/collapse-check.png") no-repeat right center
+      content: ''
+      position: absolute
+      width: 15px
+      height: 12px
+ 
+.faq-calculate:before
+  background: linear-gradient(140deg,#177a95 0%,#2f96ad 50%,#43adc1 75%)
+  content: ""
+  display: block
+  position: absolute
+  width: 100%
+  height: 8px
+  top: -5px
+  left: 0
+  border-radius: 4px
+  
+.faq-calculate
+  position: relative
+  border: 1px solid #e1e1e1
+  overflow-x: auto
+  .slider-selection
+    background: linear-gradient(140deg,#177a95 0%,#2f96ad 50%,#43adc1 75%)   
+  .slider-handle
+    background: url("../img/icons/slider-point.png") no-repeat
+    background-size: contain
+    curose: pointer
+  .slider-track-high
+    background: #bcbcbc
+  .slider.slider-horizontal
+    width: 100%
+  .amount
+    text-align: center
+    border: 1px solid #e1e1e1
+    padding: 8px
+    border-radius: 50px
+    margin-top: -8px
+    margin-bottom: 15px
+  .btn
+    display: block
+    margin-top: 25px
+  h5
+    color: #343434
+    font-size: 18px
+    font-family font-bold
+    margin-bottom: 20px
+.faq-calculate-wrap
+  padding: 25px   
+.faq-slider-wrap
+  background: #efefef
+  padding: 15px 20px
+  border-radius: 50px
+  margin-bottom: 20px
+.step-select-wrap 
+  .quote-select-code
+    background-image: url("../img/icons/down-icon2.png")
+    background-repeat: no-repeat
+    background-position: right center
+    border: 1px solid #ebebeb
+    padding: 10px 20px
+    width: 100%
+    font-size: 14px
+    font-family font-bold
+  select
+    -moz-appearance: window
+    -webkit-appearance: none
+
+.cal-table,
+.cal-table2
+  border-top: 1px solid #e1e1e1
+  border-bottom: 1px solid #e1e1e1
+  margin-top: 10px
+  width: 100%
+ 
+ 
+.cal-table
+  background-color: #f4f4f4
+  margin-bottom: 20px
+  td
+    padding: 15px
+    font-size: 12px
+    border-right: 1px solid #e1e1e1
+  td:last-child
+    border: none
+  strong
+    font-size: 15px
+
+.cal-table2
+  th,
+  td
+    padding: 15px 
+    text-align: center
+  th
+    font-size: 14px
+  td
+    font-size: 13px
+  th:nth-child(1)
+    background-color: #9d9d9d
+  th:nth-child(2)
+    background-color: #bfbfbf
+  th:nth-child(3)
+    background-color: #d4d4d4
+  th:nth-child(4)
+    background-color: #e3e3e3
+  th:nth-child(5)
+    background-color: #ececec
+    
 @media screen and (max-width: 1200px)
     .compare-box2
         padding: 50px 0 50px 0
     .protection-box
         padding: 60px 20px 40px
-
+    .cal-table 
+      td 
+        padding: 12px  
 @media screen and (max-width: 990px)
     .inner-content-wrap
         padding: 0
@@ -210,7 +371,20 @@
 
     #pagination li
        margin: 0
-
+       
+    .faq-panel .panel-heading
+      a,
+      a:active
+        font-size: 15px
+    .faq-panel .panel-body 
+      padding: 15px
+      p,
+      .amount 
+        font-size: 14px
+    .cal-table 
+      td
+        padding: 10px
+          
 @media screen and (max-width: 380px)
     #main-blog-pagination
        li

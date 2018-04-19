@@ -49,3 +49,22 @@ theToggle.onclick = function() {
    toggleClass(this, 'on');
    return false;
 }
+
+
+ 
+// Without JQuery
+var slider = new Slider('#val', {
+  formatter: function(value) {
+    return 'Current value: ' + value;
+  }
+});
+var slider = new Slider('#val2', {
+  formatter: function(value) {
+    return 'Current value: ' + value;
+  }
+});
+var slider = new Slider('#val3', {
+  formatter: function(value) {
+    return 'Current value: ' + value;
+  }
+});

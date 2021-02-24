@@ -1,0 +1,16 @@
+#employee_section .table{
+	width: 100%;
+}
+#employee_section .table thead {
+	background: #f2f5f3;
+}
+#employee_section  .table thead th, #employee_section  .table tbody td{
+	border: none;
+}
+#employee_section  .table tbody td a {
+	display: inline-block;
+	margin: 0 5px;
+}
+#employee_section .table tbody tr:nth-child(even) {
+	background: #f8f8f8;
+}

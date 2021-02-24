@@ -1,0 +1,21 @@
+body{
+	color: #696969;
+	font-size: 17px;
+	font-family: 'Bariol Regular';
+}
+#bg-wrapper.active {
+	background: rgba(000,000,000,0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+	top: 0;
+}
+#home_section .container, #employee_section .container {
+	padding: 0 80px;
+}
+@media(max-width: 767px){
+	#home_section .container, #employee_section .container {
+		padding: 0 15px;
+	}
+}

@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'Bariol Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Bariol Regular'), url('../font/bariol_regular-webfont.woff') format('woff');
+}

@@ -1,0 +1,22 @@
+header {
+	padding: 40px 0;
+}
+header #logo {
+	display: block;
+}
+header .button__wrapper {
+	text-align: right;
+}
+header .button__wrapper a {
+	display: inline-block;
+	margin-left: 15px;
+}
+@media(max-width: 767px){
+	header .button__wrapper {
+		text-align: center;
+		margin-top: 20px;
+	}
+	header #logo {
+		text-align: center;
+	}
+}

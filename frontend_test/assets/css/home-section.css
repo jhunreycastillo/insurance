@@ -1,0 +1,43 @@
+#home_section, #employee_section {
+	margin-bottom: 40px;
+}
+
+#home_section #modal {
+	display: none;
+	position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    top: 20%;
+	z-index: 100;
+}
+#home_section .modal_wrapper {
+	width: 35%;
+    position: relative;
+    margin: 0 auto;
+    background: #fff;
+}
+#home_section .modal_wrapper img{
+	width: 100%;	
+}
+#home_section .modal_wrapper #close_modal {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	color: #696969;
+}
+#home_section h2 {
+	margin-bottom: 40px;
+}
+@media(max-width: 1199px){
+	#home_section .modal_wrapper {
+		width: 80%;
+	}
+}
+@media(max-width: 767px){
+	#home_section .modal_wrapper #close_modal {
+		top: 5px;
+		right: 10px;
+	}
+}
